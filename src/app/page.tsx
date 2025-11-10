@@ -239,13 +239,12 @@ export default function Home() {
 
             {/* Award 4 - Dean's Award */}
             <div className="flex flex-col items-center group">
-              <div className="mb-6 group-hover:scale-105 transition-all duration-300 w-24 h-24 flex items-center justify-center bg-gradient-to-br from-amber-100 to-yellow-200 rounded-2xl shadow-lg">
-                <div className="text-center">
-                  <div className="text-xs font-bold text-amber-800 mb-1">DEAN'S</div>
-                  <div className="text-2xl font-bold text-slate-800">★</div>
-                  <div className="text-xs font-bold text-amber-800 mb-1">AWARD</div>
-                  <div className="text-xs font-semibold text-amber-600">2023</div>
-                </div>
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                <img
+                  src="/dean.jpg"
+                  alt="University of Dhaka Dean's Award Logo"
+                  className="w-24 h-24 object-contain"
+                />
               </div>
               <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 2023 Dean's Award
@@ -257,12 +256,12 @@ export default function Home() {
 
             {/* Award 5 - APSA */}
             <div className="flex flex-col items-center group">
-              <div className="mb-6 group-hover:scale-105 transition-all duration-300 w-24 h-24 flex items-center justify-center bg-gradient-to-br from-purple-100 to-violet-200 rounded-2xl shadow-lg">
-                <div className="text-center">
-                  <div className="text-xs font-bold text-purple-800 mb-1">AMERICAN</div>
-                  <div className="text-lg font-bold text-slate-800">APSA</div>
-                  <div className="text-xs font-bold text-purple-800">MEMBER</div>
-                </div>
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                <img
+                  src="/logo.png"
+                  alt="American Political Science Association Logo"
+                  className="w-24 h-24 object-contain"
+                />
               </div>
               <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 American Political Science Association
