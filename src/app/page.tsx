@@ -72,6 +72,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="bg-stone-100 py-20 sm:py-32">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-base font-medium leading-7 text-stone-600">about</p>
+            <h2 className="mt-4 text-4xl font-light tracking-tight text-stone-800 sm:text-5xl">
+              Dr. Rumi
+            </h2>
+            <div className="mt-2 h-px bg-stone-400 mx-auto w-16"></div>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-base leading-7 text-stone-700">
+            <p className="text-lg leading-8 mb-8">
+              Maruf Hasan Rumi is an Assistant Professor at the University of Dhaka and a PhD Student in Political Science at Texas Tech University. He is a J.T. and Margaret Talkington Graduate Fellow, specializing in digital governance, social policy, technology, and behavioral science.
+            </p>
+
+            <p className="mb-8">
+              His influential research examines the interconnected areas of digital governance and public policy, with particular focus on how technology shapes administrative practices and citizen engagement. An accomplished scholar and educator, he has published extensively in Scopus and Web of Science-indexed journals, including <em>Frontiers in Sociology</em>, <em>PLOS Digital Health</em>, and the <em>Journal of Police and Criminal Psychology</em>.
+            </p>
+
+            <p className="mb-8">
+              Dr. Rumi has received numerous prestigious awards and fellowships, including the American Red Cross Research Grant (2024), Bangladesh Bureau of Educational Information and Statistics Fellowship (2024), and the UGC-Dhaka University Research Fellowship (2023). He serves on the Editorial Board of the Journal of Public Policy and Service Analysis and is an active member of professional organizations including the American Political Science Association and the Bangladesh Tobacco Control Research Network.
+            </p>
+
+            <p>
+              Currently working on groundbreaking research in digital governance and social policy, Dr. Rumi brings together his expertise in behavioral science and public administration to address contemporary challenges in governance and technology. His work bridges academic scholarship with practical applications in public policy and administrative reform.
+            </p>
+          </div>
+
+          <div className="text-center mt-12">
+            <a
+              href="#"
+              className="text-stone-600 hover:text-stone-800 font-medium text-sm tracking-wide"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Books Section */}
       <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
