@@ -6,7 +6,7 @@ export const books: Book[] = [
     title: 'Handbook of Public Policy in Asia',
     subtitle: 'Chapter: Public policy in Bangladesh: confronting top-down, incremental, and political interference',
     description: 'A critical examination of public policy processes in Bangladesh, analyzing the challenges of top-down approaches and political interference in policy implementation. This chapter contributes to a comprehensive handbook covering public policy across Asian countries, offering comparative insights into governance challenges.',
-    coverImage: 'https://picsum.photos/400/600?random=1',
+    coverImage: '/Public Policy in Asia.jpg',
     publishDate: '2025',
     publisher: 'Academic Publishers',
     isbn: '978-0-000-00000-0',
