@@ -58,9 +58,13 @@ export const cvSections: CVSection[] = [
         date: '2023-2025',
         description: `
           • "Public policy in Bangladesh: confronting top-down, incremental, and political interference," Handbook of Public Policy in Asia, Edward Elgar Publishing, 2025.
+
           • "The Role of the Village Court as an Alternative Dispute Resolution Tool in Rural Bangladesh," Contemporary Issues and Problems of Public Administration in Bangladesh, 2025.
+
           • "Forced Migration and Transnational Crime in Southeast Asia," Handbook of Migration, International Relations and Security in Asia, Springer Nature, 2024.
+
           • "Impacts of Covid 19 on Textile Industry Workers in Bangladesh," 5th World Congress on Disaster Management, Routledge, 2023.
+
           • "Cash-Aid Support of Bangladesh Government During Covid 19 Pandemic," 5th World Congress on Disaster Management, Routledge, 2023.
         `
       },
@@ -69,10 +73,15 @@ export const cvSections: CVSection[] = [
         date: '2024-2025',
         description: `
           • "If Not Now Then When? The Reality of Women's Representation in Politics and Administration in Bangladesh," International Journal of Qualitative Research, 2025.
+
           • "Factors affecting trust in Bangladesh police among urban male residents," Frontiers in Sociology, 2025.
+
           • "Citizens' trust in Bangladesh Police," Policing: A Journal of Policy and Practice, 2024. DOI: 10.1093/police/paae064
+
           • "Towards women's digital health equity," PLOS Digital Health, 2024. DOI: 10.1371/journal.pdig.0000637
+
           • "Students' safety culture at tertiary level academic institutes in Bangladesh," Heliyon, 2024.
+
           • "Empowerment through engagement: female university students' involvement in volunteering activities," Southeast Asia: A Multidisciplinary Journal, 2024. DOI: 10.1108/SEAMJ-08-2023-0062
         `
       }
