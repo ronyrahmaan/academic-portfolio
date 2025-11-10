@@ -11,6 +11,9 @@
   --font-inter: var(--font-inter);
   --font-playfair: var(--font-playfair);
   --font-source-serif: var(--font-source-serif);
+  --font-cinzel: var(--font-cinzel);
+  --font-cormorant: var(--font-cormorant);
+  --font-eb-garamond: var(--font-eb-garamond);
 }
 
 @media (prefers-color-scheme: dark) {

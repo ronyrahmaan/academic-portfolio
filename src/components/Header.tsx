@@ -30,7 +30,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-2xl font-playfair font-medium text-transparent bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 bg-clip-text tracking-wide hover:scale-105 transition-all duration-300 drop-shadow-sm"
+              className="text-2xl font-cinzel font-semibold text-transparent bg-gradient-to-r from-slate-800 via-slate-900 to-slate-800 bg-clip-text tracking-wider hover:scale-105 transition-all duration-300 drop-shadow-sm"
             >
               Maruf Hasan Rumi
             </Link>
