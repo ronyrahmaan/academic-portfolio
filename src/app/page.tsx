@@ -189,13 +189,11 @@ export default function Home() {
             {/* Award 1 - Texas Tech Fellowship */}
             <div className="flex flex-col items-center group">
               <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-                <div className="w-28 h-28 rounded-full border-2 border-slate-300 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-blue-800 mb-1">TEXAS TECH</div>
-                    <div className="text-lg font-bold text-slate-800">TTU</div>
-                    <div className="text-xs font-semibold text-blue-600">2025</div>
-                  </div>
-                </div>
+                <img
+                  src="/1.svg"
+                  alt="Texas Tech University Logo"
+                  className="w-20 h-20 object-contain"
+                />
               </div>
               <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
                 2025 J.T. and Margaret Talkington Graduate Fellowship
