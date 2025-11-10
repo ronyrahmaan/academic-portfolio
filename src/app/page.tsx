@@ -7,17 +7,17 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Full background image positioned to show face on right */}
+        {/* Full background image positioned to show face clearly on right */}
         <div className="absolute inset-0">
           <Image
             src="/Rumi, Maruf Hasan (Headshot 5).jpg"
             alt="Maruf Hasan Rumi"
             fill
-            className="object-cover object-right"
+            className="object-cover object-[75%_center]"
             priority
           />
-          {/* Gradient overlay darker on left for text, lighter on right for face visibility */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
+          {/* Gradient overlay stronger on left, minimal on right for face visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/30 to-transparent"></div>
         </div>
 
         {/* Content overlay */}
@@ -25,34 +25,34 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="flex items-center min-h-screen">
 
-              {/* Left side - Content with better positioning */}
-              <div className="w-full lg:w-1/2 py-20 space-y-8">
-                <h1 className="text-6xl sm:text-7xl lg:text-8xl font-serif font-light leading-[0.9] text-white tracking-tight">
+              {/* Left side - Content positioned to avoid face area */}
+              <div className="w-full lg:w-2/5 py-20 space-y-8">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[0.9] text-white tracking-tight">
                   Maruf Hasan Rumi
                 </h1>
 
-                <div className="space-y-6 text-white max-w-lg">
+                <div className="space-y-6 text-white max-w-md">
                   <div className="space-y-3">
-                    <p className="text-xl font-light leading-relaxed">
+                    <p className="text-lg font-light leading-relaxed">
                       Assistant Professor of Public Administration and
                     </p>
-                    <p className="text-xl font-light leading-relaxed">
+                    <p className="text-lg font-light leading-relaxed">
                       PhD Student in Political Science
                     </p>
                   </div>
 
-                  <p className="text-lg font-light text-gray-200">
+                  <p className="text-base font-light text-gray-200">
                     University of Dhaka • Texas Tech University
                   </p>
 
-                  <div className="pt-4">
-                    <p className="text-lg font-light leading-relaxed">
+                  <div className="pt-3">
+                    <p className="text-base font-light leading-relaxed">
                       Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
                     </p>
                   </div>
 
                   <div className="pt-6 border-t border-white/30">
-                    <p className="text-base font-medium text-gray-100">
+                    <p className="text-sm font-medium text-gray-100">
                       J.T. and Margaret Talkington Graduate Fellow
                     </p>
                   </div>
