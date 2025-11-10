@@ -6,17 +6,31 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Full background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/Rumi, Maruf Hasan (Headshot 5).jpg"
+            alt="Maruf Hasan Rumi"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        {/* Content overlay */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 items-center min-h-screen">
 
             {/* Left side - Content */}
             <div className="py-20 space-y-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[1.1] text-gray-900 tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[1.1] text-white tracking-tight">
                 Maruf Hasan Rumi
               </h1>
 
-              <div className="space-y-6 text-gray-700 max-w-xl">
+              <div className="space-y-6 text-white max-w-xl">
                 <div className="space-y-2">
                   <p className="text-xl font-light leading-relaxed">
                     Assistant Professor of Public Administration and
@@ -26,7 +40,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="text-lg font-light text-gray-600">
+                <p className="text-lg font-light text-gray-200">
                   University of Dhaka • Texas Tech University
                 </p>
 
@@ -36,37 +50,16 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-gray-200">
-                  <p className="text-base font-medium text-gray-800">
+                <div className="pt-4 border-t border-white/30">
+                  <p className="text-base font-medium text-gray-100">
                     J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Right side - Photo */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Rotated and blended photo */}
-                <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-500">
-                  <Image
-                    src="/Rumi, Maruf Hasan (Headshot 5).jpg"
-                    alt="Maruf Hasan Rumi"
-                    width={450}
-                    height={550}
-                    className="w-full h-auto object-cover rounded-3xl shadow-2xl ring-8 ring-white/50 backdrop-blur-sm"
-                    priority
-                  />
-                  {/* Blending overlay that matches background */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/20 mix-blend-multiply"></div>
-                </div>
-
-                {/* Background decoration matching website theme */}
-                <div className="absolute -inset-8 bg-gradient-to-br from-blue-100/30 to-purple-100/30 rounded-full blur-3xl -z-10"></div>
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-200/40 rounded-full"></div>
-                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-purple-200/40 rounded-full"></div>
-              </div>
-            </div>
+            {/* Right side - Empty (photo is background) */}
+            <div></div>
 
           </div>
         </div>
