@@ -14,6 +14,7 @@
   --font-cinzel: var(--font-cinzel);
   --font-cormorant: var(--font-cormorant);
   --font-eb-garamond: var(--font-eb-garamond);
+  --font-space-grotesk: var(--font-space-grotesk);
 }
 
 @media (prefers-color-scheme: dark) {
