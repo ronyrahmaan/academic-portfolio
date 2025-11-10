@@ -214,7 +214,7 @@ export default function Home() {
           <div className="relative w-full overflow-hidden">
             <div className="flex animate-scroll-left">
               {/* First set of accolades */}
-              <div className="flex space-x-56 pl-8">
+              <div className="flex space-x-32 pl-8">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[480px] max-w-[480px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
@@ -225,7 +225,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2025 Talkington Fellowship
+                      J.T. and Margaret Talkington Graduate Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Texas Tech University
@@ -242,7 +242,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2024 American Red Cross Grant
+                      American Red Cross Research Grant
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Research Excellence Award
@@ -259,7 +259,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2024 Bangladesh Bureau Fellowship
+                      Bangladesh Bureau of Educational Information and Statistics Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Ministry of Education, Bangladesh
@@ -276,7 +276,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2023 UGC Research Fellowship
+                      UGC-Dhaka University Research Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       University of Dhaka
@@ -293,7 +293,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2023 Dean's Award
+                      Dean's Award for Academic Excellence
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       University of Dhaka in Social Science Faculty
@@ -353,7 +353,7 @@ export default function Home() {
                 </div>
 
                 {/* Second set of accolades (duplicate for seamless loop) */}
-                <div className="flex space-x-56 ml-56">
+                <div className="flex space-x-32 ml-32">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[480px] max-w-[480px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
@@ -364,7 +364,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2025 Talkington Fellowship
+                      J.T. and Margaret Talkington Graduate Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Texas Tech University
@@ -381,7 +381,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2024 American Red Cross Grant
+                      American Red Cross Research Grant
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Research Excellence Award
@@ -398,7 +398,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2024 Bangladesh Bureau Fellowship
+                      Bangladesh Bureau of Educational Information and Statistics Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       Ministry of Education, Bangladesh
@@ -415,7 +415,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2023 UGC Research Fellowship
+                      UGC-Dhaka University Research Fellowship
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       University of Dhaka
@@ -432,7 +432,7 @@ export default function Home() {
                       />
                     </div>
                     <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-6 min-h-[5rem] flex items-center">
-                      2023 Dean's Award
+                      Dean's Award for Academic Excellence
                     </h3>
                     <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-6">
                       University of Dhaka in Social Science Faculty
