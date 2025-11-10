@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
 import { useState } from "react";
+import { books } from "@/data/books";
+import { publications } from "@/data/publications";
 
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -306,36 +308,113 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-            {/* Placeholder for featured books - will be populated from data */}
-            {[1, 2, 3].map((i) => (
-              <article key={i} className="flex max-w-xl flex-col items-start">
-                <div className="relative w-full">
+            {books.slice(0, 3).map((book) => (
+              <article key={book.id} className="flex max-w-xl flex-col items-start group hover:shadow-lg transition-all duration-300 rounded-2xl p-6">
+                <div className="relative w-full group-hover:scale-105 transition-transform duration-300">
                   <Image
-                    src="/placeholder-book.jpg"
-                    alt="Book cover"
-                    className="aspect-[16/20] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/3]"
+                    src={book.coverImage}
+                    alt={`Cover of ${book.title}`}
+                    className="aspect-[16/20] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/3] shadow-lg"
                     width={300}
                     height={400}
                   />
                 </div>
                 <div className="max-w-xl">
                   <div className="mt-8 flex items-center gap-x-4 text-xs">
-                    <time className="text-gray-500 font-space-grotesk">2024</time>
+                    <time className="text-gray-500 font-space-grotesk">{book.publishDate}</time>
+                    <span className="text-gray-500 font-space-grotesk">{book.publisher}</span>
                   </div>
                   <div className="group relative">
                     <h3 className="mt-3 text-lg font-cinzel font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                       <Link href="/books">
                         <span className="absolute inset-0" />
-                        Book Title {i}
+                        {book.title}
                       </Link>
                     </h3>
+                    {book.subtitle && (
+                      <h4 className="mt-2 text-sm font-space-grotesk text-gray-600">
+                        {book.subtitle}
+                      </h4>
+                    )}
                     <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 font-space-grotesk">
-                      A compelling description of your book and its main arguments or findings.
+                      {book.description}
                     </p>
                   </div>
                 </div>
               </article>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              href="/books"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-cinzel font-medium rounded-lg text-white bg-gradient-to-r from-green-600 to-green-500 hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              View All Books
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Publications Section */}
+      <section className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Publications</h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk">
+              Latest research contributions to academic journals and scholarly publications.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {publications.slice(0, 4).map((publication) => (
+              <article key={publication.id} className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-6 border border-gray-100">
+                <div className="flex items-start justify-between mb-4">
+                  <span className={`px-3 py-1 rounded-full text-xs font-space-grotesk font-semibold ${
+                    publication.type === 'journal' ? 'bg-blue-100 text-blue-800' : 'bg-green-100 text-green-800'
+                  }`}>
+                    {publication.type === 'journal' ? 'Journal Article' : 'Book Chapter'}
+                  </span>
+                  <span className="text-sm font-space-grotesk text-gray-500">{publication.year}</span>
+                </div>
+
+                <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-3 line-clamp-2 leading-tight">
+                  {publication.title}
+                </h3>
+
+                {publication.journal && (
+                  <p className="text-sm font-space-grotesk text-gray-600 mb-3 italic">
+                    Published in {publication.journal}
+                  </p>
+                )}
+
+                <p className="text-sm font-space-grotesk text-gray-700 line-clamp-3 leading-relaxed">
+                  {publication.abstract}
+                </p>
+
+                {publication.category && (
+                  <div className="mt-4">
+                    <span className="inline-block px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-space-grotesk">
+                      {publication.category}
+                    </span>
+                  </div>
+                )}
+              </article>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/publications"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-cinzel font-medium rounded-lg text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              View All Publications
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
