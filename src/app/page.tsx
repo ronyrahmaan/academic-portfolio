@@ -188,16 +188,18 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Award 1 - J.T. and Margaret Talkington Graduate Fellowship */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-blue-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.9 1 3 1.9 3 3V21C3 22.1 3.9 23 5 23H19C20.1 23 21 22.1 21 21V9Z" opacity="0.8"/>
+                    <path d="M7 8H17V10H7V8ZM7 12H17V14H7V12ZM7 16H14V18H7V16Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   2025 J.T. and Margaret Talkington Graduate Fellowship
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   Texas Tech University Distinguished Fellowship
                 </p>
               </div>
@@ -205,16 +207,17 @@ export default function Home() {
 
             {/* Award 2 - American Red Cross Research Grant */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-red-600 via-red-700 to-rose-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-red-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   2024 American Red Cross Research Grant
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   Research Excellence Award
                 </p>
               </div>
@@ -222,16 +225,17 @@ export default function Home() {
 
             {/* Award 3 - UGC-Dhaka University Research Fellowship */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-emerald-600 via-green-700 to-teal-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-emerald-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M5,3C3.89,3 3,3.89 3,5V19C3,20.11 3.89,21 5,21H11V19H5V5H11V7H19V5C19,3.89 18.11,3 17,3H5M12,2L17,7V9H12V2M20.54,15.88L19.43,14.77L16,18.2L14,16.2L12.89,17.31L16,20.42L20.54,15.88Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   2023 UGC-Dhaka University Research Fellowship
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   University Grants Commission Fellowship
                 </p>
               </div>
@@ -239,16 +243,17 @@ export default function Home() {
 
             {/* Award 4 - Dean's Award */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-amber-600 via-orange-700 to-yellow-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-amber-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   2023 Dean's Award
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   University of Dhaka Excellence Recognition
                 </p>
               </div>
@@ -259,16 +264,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12 max-w-4xl mx-auto">
             {/* Professional Membership */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-purple-600 via-violet-700 to-indigo-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-purple-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M16,4C16.88,4 17.67,4.38 18.18,5C18.69,4.38 19.48,4 20.36,4C21.8,4 22.96,5.16 22.96,6.6C22.96,7.68 22.36,8.63 21.44,9L22,20H20L19.67,14H16.33L16,20H14L14.56,9C13.64,8.63 13.04,7.68 13.04,6.6C13.04,5.16 14.2,4 15.64,4H16M2,6H12V8H2V6M2,10H8V12H2V10M2,14H10V16H2V14Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   American Political Science Association
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   Professional Member
                 </p>
               </div>
@@ -276,16 +282,17 @@ export default function Home() {
 
             {/* Editorial Board */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-teal-600 via-cyan-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-teal-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   Editorial Board Member
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   Journal of Public Policy and Service Analysis
                 </p>
               </div>
@@ -293,16 +300,18 @@ export default function Home() {
 
             {/* Research Publications */}
             <div className="group">
-              <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200/50 backdrop-blur-sm">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-rose-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              <div className="bg-white/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-white/20 backdrop-blur-md hover:bg-white/90">
+                <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-rose-600 via-pink-700 to-red-800 rounded-3xl flex items-center justify-center shadow-2xl group-hover:scale-110 group-hover:shadow-rose-500/25 transition-all duration-500 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+                  <svg className="w-12 h-12 text-white relative z-10" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,19H5V5H19V19Z"/>
+                    <path d="M17,17H7V15H17M17,13H7V11H17M17,9H7V7H17"/>
                   </svg>
                 </div>
-                <h3 className="text-center text-sm font-semibold text-slate-800 mb-2 leading-tight">
+                <h3 className="text-center text-sm font-bold text-slate-800 mb-3 leading-tight">
                   Scopus & Web of Science Publications
                 </h3>
-                <p className="text-xs text-center text-slate-600">
+                <p className="text-xs text-center text-slate-600 font-medium">
                   High-Impact Journal Articles
                 </p>
               </div>
