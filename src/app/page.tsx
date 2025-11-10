@@ -6,29 +6,17 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/Rumi, Maruf Hasan (Headshot 5).jpg"
-            alt="Maruf Hasan Rumi"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-        </div>
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 items-center min-h-screen">
 
-        {/* Content Overlay */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 items-center min-h-screen">
             {/* Left side - Content */}
-            <div className="text-white py-20">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-normal leading-tight mb-6">
+            <div className="py-20">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-normal leading-tight mb-8 text-gray-900">
                 Maruf Hasan Rumi
               </h1>
 
-              <div className="space-y-4 text-lg font-light leading-relaxed">
+              <div className="space-y-4 text-lg font-light leading-relaxed text-gray-900">
                 <p>
                   Assistant Professor of Public Administration and
                 </p>
@@ -53,8 +41,20 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right side - Empty for image background */}
-            <div></div>
+            {/* Right side - Photo */}
+            <div className="flex justify-end">
+              <div className="relative w-full max-w-lg">
+                <Image
+                  src="/Rumi, Maruf Hasan (Headshot 5).jpg"
+                  alt="Maruf Hasan Rumi"
+                  width={500}
+                  height={625}
+                  className="w-full h-auto object-cover rounded-lg"
+                  priority
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
