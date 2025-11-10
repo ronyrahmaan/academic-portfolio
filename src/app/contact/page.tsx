@@ -1,0 +1,252 @@
+'use client';
+
+import { useState } from 'react';
+import Layout from "@/components/Layout";
+
+export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    organization: '',
+    subject: '',
+    message: '',
+    type: 'general'
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically integrate with a form service like Formspree, Netlify Forms, etc.
+    console.log('Form submitted:', formData);
+    alert('Thank you for your message! I will get back to you soon.');
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      organization: '',
+      subject: '',
+      message: '',
+      type: 'general'
+    });
+  };
+
+  return (
+    <Layout>
+      <div className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Contact
+            </h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600">
+              I welcome inquiries about speaking engagements, media interviews, collaboration opportunities, and general questions about my research.
+            </p>
+          </div>
+
+          <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-16 sm:grid-cols-2">
+            {/* Contact Information */}
+            <div>
+              <h3 className="text-lg font-semibold text-gray-900">Contact Information</h3>
+              <div className="mt-6 space-y-4">
+                <div>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Email</p>
+                      <p className="text-sm text-gray-600">your.email@university.edu</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Office</p>
+                      <p className="text-sm text-gray-600">
+                        Building Name, Room 123<br />
+                        Department of [Your Department]<br />
+                        University Name<br />
+                        City, State ZIP
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex">
+                    <div className="flex-shrink-0">
+                      <svg className="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-gray-900">Phone</p>
+                      <p className="text-sm text-gray-600">(555) 123-4567</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Office Hours */}
+              <div className="mt-8">
+                <h4 className="text-base font-semibold text-gray-900">Office Hours</h4>
+                <div className="mt-3 text-sm text-gray-600">
+                  <p>Tuesday & Thursday: 2:00 PM - 4:00 PM</p>
+                  <p>Or by appointment</p>
+                </div>
+              </div>
+
+              {/* Social Media */}
+              <div className="mt-8">
+                <h4 className="text-base font-semibold text-gray-900">Connect</h4>
+                <div className="mt-3 space-y-2">
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                    <span className="mr-2">📧</span>
+                    Newsletter Signup
+                  </a>
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                    <span className="mr-2">🐦</span>
+                    Twitter
+                  </a>
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                    <span className="mr-2">💼</span>
+                    LinkedIn
+                  </a>
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                    <span className="mr-2">🎓</span>
+                    Academic Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="type" className="block text-sm font-medium text-gray-900">
+                    Type of Inquiry
+                  </label>
+                  <select
+                    name="type"
+                    id="type"
+                    value={formData.type}
+                    onChange={handleInputChange}
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  >
+                    <option value="general">General Question</option>
+                    <option value="speaking">Speaking Engagement</option>
+                    <option value="media">Media Interview</option>
+                    <option value="collaboration">Collaboration</option>
+                    <option value="student">Student Inquiry</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-900">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-900">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="organization" className="block text-sm font-medium text-gray-900">
+                    Organization (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    name="organization"
+                    id="organization"
+                    value={formData.organization}
+                    onChange={handleInputChange}
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="subject" className="block text-sm font-medium text-gray-900">
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    required
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-900">
+                    Message
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                  />
+                </div>
+
+                <div>
+                  <button
+                    type="submit"
+                    className="flex w-full justify-center rounded-md bg-gray-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  );
+}
