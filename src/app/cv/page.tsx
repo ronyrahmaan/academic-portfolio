@@ -11,10 +11,10 @@ export default function CV() {
               Curriculum Vitae
             </h1>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Maruf Hasan Rumi, PhD
+              Maruf Hasan Rumi
             </p>
             <p className="text-sm text-gray-500">
-              Professor, Department of [Your Department] | University Name
+              Assistant Professor, Department of Economics | Texas Tech University
             </p>
           </div>
 

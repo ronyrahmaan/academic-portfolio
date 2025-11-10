@@ -8,35 +8,44 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none lg:grid lg:grid-cols-2 lg:gap-x-20 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 className="max-w-2xl text-5xl font-light tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">
-              Maruf Hasan Rumi
-              <span className="block text-3xl sm:text-4xl text-gray-600 font-light mt-2">PhD</span>
-            </h1>
-            <div className="mt-8 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p className="text-xl leading-8 text-gray-700 font-light">
-                Academic researcher, author, and public intellectual specializing in [your field].
-                Professor of [Department] at [University Name].
-              </p>
-              <div className="mt-12 flex items-center gap-x-6">
-                <Link
-                  href="/books"
-                  className="rounded-none bg-gray-900 px-6 py-3 text-sm font-medium text-white shadow-lg hover:bg-gray-800 transition-all duration-200 hover:shadow-xl"
-                >
-                  View Books
-                </Link>
-                <Link href="/cv" className="text-sm font-medium leading-6 text-gray-900 hover:text-gray-700 transition-colors group">
-                  Download CV <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
-                </Link>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 items-center">
+            {/* Left side - Photo */}
+            <div className="order-2 lg:order-1">
+              <Image
+                src="/Rumi, Maruf Hasan (Headshot 5).jpg"
+                alt="Maruf Hasan Rumi"
+                className="w-full max-w-lg mx-auto aspect-[4/5] rounded-2xl object-cover shadow-2xl"
+                width={500}
+                height={625}
+              />
+            </div>
+
+            {/* Right side - Content */}
+            <div className="order-1 lg:order-2">
+              <h1 className="text-5xl font-light tracking-tight text-gray-900 sm:text-6xl xl:text-7xl">
+                Maruf Hasan Rumi
+              </h1>
+              <div className="mt-8 space-y-6">
+                <p className="text-xl leading-8 text-gray-700 font-light">
+                  Academic researcher, author, and public intellectual specializing in economics.
+                </p>
+                <p className="text-lg leading-7 text-gray-600">
+                  Assistant Professor, Department of Economics<br />
+                  Texas Tech University
+                </p>
+                <div className="mt-12 flex items-center gap-x-6">
+                  <Link
+                    href="/books"
+                    className="rounded-none bg-gray-900 px-6 py-3 text-sm font-medium text-white shadow-lg hover:bg-gray-800 transition-all duration-200 hover:shadow-xl"
+                  >
+                    View Books
+                  </Link>
+                  <Link href="/cv" className="text-sm font-medium leading-6 text-gray-900 hover:text-gray-700 transition-colors group">
+                    Download CV <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
+                  </Link>
+                </div>
               </div>
             </div>
-            <Image
-              src="/placeholder-photo.jpg"
-              alt="Maruf Hasan Rumi"
-              className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-              width={600}
-              height={500}
-            />
           </div>
         </div>
       </section>

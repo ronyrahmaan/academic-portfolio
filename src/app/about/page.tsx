@@ -8,10 +8,10 @@ export default function About() {
         <div className="mx-auto max-w-4xl text-base leading-7 text-gray-700">
           <p className="text-base font-medium leading-7 text-gray-600">About</p>
           <h1 className="mt-4 text-4xl font-light tracking-tight text-gray-900 sm:text-5xl">
-            Maruf Hasan Rumi, PhD
+            Maruf Hasan Rumi
           </h1>
           <p className="mt-6 text-xl leading-8">
-            Professor of [Department] at [University Name], specializing in [your academic focus].
+            Assistant Professor of Economics at Texas Tech University, specializing in economic theory and policy analysis.
           </p>
 
           <div className="mt-10 max-w-2xl">
