@@ -11,7 +11,7 @@ export default function CV() {
               Curriculum Vitae
             </h1>
             <p className="mt-2 text-lg leading-8 text-gray-600">
-              Your Name, PhD
+              Maruf Hasan Rumi, PhD
             </p>
             <p className="text-sm text-gray-500">
               Professor, Department of [Your Department] | University Name

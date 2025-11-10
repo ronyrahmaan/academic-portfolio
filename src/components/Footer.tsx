@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-gray-200">
           <p className="text-xs text-gray-500 text-center">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Maruf Hasan Rumi. All rights reserved.
           </p>
         </div>
       </div>

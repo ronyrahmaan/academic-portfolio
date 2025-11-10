@@ -4,11 +4,11 @@ import Layout from "@/components/Layout";
 export default function About() {
   return (
     <Layout>
-      <div className="bg-white px-6 py-32 lg:px-8">
-        <div className="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-          <p className="text-base font-semibold leading-7 text-gray-900">About</p>
-          <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Your Name, PhD
+      <div className="bg-white px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-4xl text-base leading-7 text-gray-700">
+          <p className="text-base font-medium leading-7 text-gray-600">About</p>
+          <h1 className="mt-4 text-4xl font-light tracking-tight text-gray-900 sm:text-5xl">
+            Maruf Hasan Rumi, PhD
           </h1>
           <p className="mt-6 text-xl leading-8">
             Professor of [Department] at [University Name], specializing in [your academic focus].

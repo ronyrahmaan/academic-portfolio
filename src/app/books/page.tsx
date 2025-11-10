@@ -6,10 +6,10 @@ import { books } from "@/data/books";
 export default function Books() {
   return (
     <Layout>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="bg-white py-20 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Books</h2>
+            <h2 className="text-4xl font-light tracking-tight text-gray-900 sm:text-5xl">Books</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               My published works exploring key themes in [your field] and their broader implications.
             </p>
