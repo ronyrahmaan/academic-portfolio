@@ -224,7 +224,7 @@ export default function Home() {
             <div className="flex flex-col items-center group">
               <div className="mb-6 group-hover:scale-105 transition-all duration-300">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/en/b/b9/University_of_Dhaka_logo.svg"
+                  src="/dhaka university.png"
                   alt="University of Dhaka Logo"
                   className="w-24 h-24 object-contain"
                 />
