@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import { useState } from "react";
 import { books } from "@/data/books";
 import { publications } from "@/data/publications";
+import { cvSections } from "@/data/cv";
 
 export default function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -415,6 +416,170 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Complete CV Section */}
+      <section className="bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50 py-20 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block">
+              <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-24 mx-auto mb-6"></div>
+              <h2 className="text-4xl sm:text-5xl font-cinzel font-bold tracking-tight text-slate-800 mb-4">
+                Curriculum Vitae
+              </h2>
+              <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk max-w-2xl mx-auto">
+                A comprehensive overview of academic achievements, research contributions, and professional experience.
+              </p>
+              <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-24 mx-auto mt-6"></div>
+            </div>
+          </div>
+
+          {/* CV Download Button */}
+          <div className="text-center mb-16">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="/cv.pdf"
+                download
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-slate-800 to-slate-700 text-white font-cinzel font-semibold rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Full CV (PDF)
+              </a>
+              <Link
+                href="/cv"
+                className="inline-flex items-center text-slate-600 hover:text-slate-800 font-space-grotesk font-medium text-sm tracking-wide transition-colors duration-200 group"
+              >
+                View Detailed CV Page
+                <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+
+          {/* CV Sections Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {cvSections.slice(0, 6).map((section, sectionIndex) => (
+              <div key={sectionIndex} className="bg-white rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 p-8 border border-gray-100">
+                <div className="flex items-center mb-6">
+                  <div className="w-2 h-8 bg-gradient-to-b from-slate-600 to-slate-400 rounded-full mr-4"></div>
+                  <h3 className="text-2xl font-cinzel font-bold text-slate-800">
+                    {section.title}
+                  </h3>
+                </div>
+
+                <div className="space-y-6">
+                  {section.items.slice(0, section.title === 'Publications' ? 1 : 3).map((item, itemIndex) => (
+                    <div key={itemIndex} className="relative">
+                      <div className="flex flex-col">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
+                          <h4 className="text-base font-space-grotesk font-semibold text-gray-900 leading-tight">
+                            {item.title}
+                          </h4>
+                          {item.date && (
+                            <span className="text-sm font-space-grotesk text-slate-500 mt-1 sm:mt-0 sm:ml-4 flex-shrink-0">
+                              {item.date}
+                            </span>
+                          )}
+                        </div>
+
+                        {item.organization && (
+                          <p className="text-sm font-space-grotesk text-gray-600 mb-2">
+                            {item.organization}
+                            {item.location && <span className="text-gray-500"> • {item.location}</span>}
+                          </p>
+                        )}
+
+                        {item.description && (
+                          <div className="text-sm font-space-grotesk text-gray-600 leading-relaxed">
+                            {section.title === 'Publications' ? (
+                              <div className="space-y-1">
+                                {item.description.split('•').filter(line => line.trim()).slice(0, 3).map((line, lineIndex) => (
+                                  <p key={lineIndex} className="flex items-start">
+                                    <span className="text-slate-400 mr-2 mt-1 text-xs">•</span>
+                                    <span className="flex-1">{line.trim()}</span>
+                                  </p>
+                                ))}
+                                {item.description.split('•').filter(line => line.trim()).length > 3 && (
+                                  <p className="text-xs text-slate-500 italic">...and more</p>
+                                )}
+                              </div>
+                            ) : (
+                              <p>{item.description}</p>
+                            )}
+                          </div>
+                        )}
+                      </div>
+
+                      {itemIndex < section.items.slice(0, section.title === 'Publications' ? 1 : 3).length - 1 && (
+                        <div className="mt-4 border-b border-gray-100"></div>
+                      )}
+                    </div>
+                  ))}
+
+                  {section.items.length > (section.title === 'Publications' ? 1 : 3) && (
+                    <div className="pt-4 border-t border-gray-200">
+                      <Link
+                        href="/cv"
+                        className="text-sm font-space-grotesk text-slate-600 hover:text-slate-800 transition-colors duration-200 group inline-flex items-center"
+                      >
+                        View all {section.items.length} entries
+                        <svg className="ml-1 w-3 h-3 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Key Stats */}
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-cinzel font-bold text-slate-800">20+</div>
+              <div className="text-sm font-space-grotesk text-gray-600 mt-1">Publications</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-cinzel font-bold text-slate-800">5+</div>
+              <div className="text-sm font-space-grotesk text-gray-600 mt-1">Book Chapters</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-cinzel font-bold text-slate-800">8+</div>
+              <div className="text-sm font-space-grotesk text-gray-600 mt-1">Awards & Honors</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-cinzel font-bold text-slate-800">6+</div>
+              <div className="text-sm font-space-grotesk text-gray-600 mt-1">Years Teaching</div>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="mt-16 bg-gradient-to-br from-slate-100 to-gray-100 rounded-3xl p-8 border border-slate-200">
+            <h3 className="text-xl font-cinzel font-bold text-slate-800 mb-6 text-center">Contact Information</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="text-center md:text-left">
+                <h4 className="text-sm font-space-grotesk font-semibold text-gray-800 mb-3">Academic Address (Bangladesh)</h4>
+                <div className="text-sm font-space-grotesk text-gray-600 space-y-1">
+                  <p>Department of Public Administration</p>
+                  <p>University of Dhaka</p>
+                  <p>Dhaka 1000, Bangladesh</p>
+                </div>
+              </div>
+              <div className="text-center md:text-left">
+                <h4 className="text-sm font-space-grotesk font-semibold text-gray-800 mb-3">Graduate Address (USA)</h4>
+                <div className="text-sm font-space-grotesk text-gray-600 space-y-1">
+                  <p>Department of Political Science</p>
+                  <p>Texas Tech University</p>
+                  <p>Lubbock, TX 79409, USA</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
