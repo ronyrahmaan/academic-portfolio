@@ -18,7 +18,7 @@ export default function Home() {
             {/* Left side - Content */}
             <div className="py-20 space-y-10 pr-8">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-cinzel font-bold leading-[0.9] text-gray-900 tracking-tight">
-                Dr. Maruf Hasan Rumi
+                Maruf Hasan Rumi
               </h1>
 
               <div className="space-y-8 text-gray-800">
