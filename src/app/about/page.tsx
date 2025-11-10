@@ -126,14 +126,17 @@ export default function About() {
           </div>
 
           <figure className="mt-16">
-            <Image
-              className="aspect-video rounded-xl bg-gray-50 object-cover shadow-xl"
-              src="/Rumi, Maruf Hasan (Headshot 5).jpg"
-              alt="Dr. Maruf Hasan Rumi in academic setting"
-              width={800}
-              height={450}
-            />
-            <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500 font-space-grotesk">
+            <div className="flex justify-center">
+              <Image
+                className="rounded-xl bg-gray-50 object-contain shadow-xl max-w-full h-auto"
+                src="/Rumi, Maruf Hasan (Headshot 1).jpg"
+                alt="Dr. Maruf Hasan Rumi in academic setting"
+                width={600}
+                height={800}
+                style={{ aspectRatio: 'auto' }}
+              />
+            </div>
+            <figcaption className="mt-4 flex gap-x-2 text-sm leading-6 text-gray-500 font-space-grotesk text-center">
               <span>Dr. Rumi's commitment to bridging academic research with real-world policy impact,
               exemplifying the intersection of digital innovation and traditional governance.</span>
             </figcaption>
