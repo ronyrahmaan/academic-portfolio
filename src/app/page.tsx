@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-r from-gray-50 via-white to-gray-50">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 items-center min-h-screen">
 
@@ -47,27 +47,24 @@ export default function Home() {
             {/* Right side - Photo */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                {/* Background blur effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl transform rotate-3 scale-105 opacity-30"></div>
-
-                {/* Main photo container */}
-                <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+                {/* Rotated and blended photo */}
+                <div className="relative transform -rotate-6 hover:rotate-0 transition-transform duration-500">
                   <Image
                     src="/Rumi, Maruf Hasan (Headshot 5).jpg"
                     alt="Maruf Hasan Rumi"
                     width={450}
                     height={550}
-                    className="w-full h-auto object-cover rounded-2xl"
+                    className="w-full h-auto object-cover rounded-3xl shadow-2xl ring-8 ring-white/50 backdrop-blur-sm"
                     priority
                   />
-
-                  {/* Subtle overlay gradient */}
-                  <div className="absolute inset-4 rounded-2xl bg-gradient-to-t from-black/5 via-transparent to-transparent"></div>
+                  {/* Blending overlay that matches background */}
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-blue-50/20 via-transparent to-purple-50/20 mix-blend-multiply"></div>
                 </div>
 
-                {/* Additional decorative elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 rounded-full opacity-20"></div>
-                <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gray-200 rounded-full opacity-30"></div>
+                {/* Background decoration matching website theme */}
+                <div className="absolute -inset-8 bg-gradient-to-br from-blue-100/30 to-purple-100/30 rounded-full blur-3xl -z-10"></div>
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-200/40 rounded-full"></div>
+                <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-purple-200/40 rounded-full"></div>
               </div>
             </div>
 
@@ -76,7 +73,7 @@ export default function Home() {
       </section>
 
       {/* Featured Books Section */}
-      <section className="bg-white py-20 sm:py-32">
+      <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
@@ -120,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="bg-gray-50 py-20 sm:py-32">
+      <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
