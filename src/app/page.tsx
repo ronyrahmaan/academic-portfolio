@@ -7,60 +7,59 @@ export default function Home() {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Full background image */}
+        {/* Full background image positioned to show face on right */}
         <div className="absolute inset-0">
           <Image
             src="/Rumi, Maruf Hasan (Headshot 5).jpg"
             alt="Maruf Hasan Rumi"
             fill
-            className="object-cover object-center"
+            className="object-cover object-right"
             priority
           />
-          {/* Dark overlay for text readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          {/* Gradient overlay darker on left for text, lighter on right for face visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/20"></div>
         </div>
 
         {/* Content overlay */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 items-center min-h-screen">
+        <div className="relative z-10 w-full">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+            <div className="flex items-center min-h-screen">
 
-            {/* Left side - Content */}
-            <div className="py-20 space-y-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[1.1] text-white tracking-tight">
-                Maruf Hasan Rumi
-              </h1>
+              {/* Left side - Content with better positioning */}
+              <div className="w-full lg:w-1/2 py-20 space-y-8">
+                <h1 className="text-6xl sm:text-7xl lg:text-8xl font-serif font-light leading-[0.9] text-white tracking-tight">
+                  Maruf Hasan Rumi
+                </h1>
 
-              <div className="space-y-6 text-white max-w-xl">
-                <div className="space-y-2">
-                  <p className="text-xl font-light leading-relaxed">
-                    Assistant Professor of Public Administration and
+                <div className="space-y-6 text-white max-w-lg">
+                  <div className="space-y-3">
+                    <p className="text-xl font-light leading-relaxed">
+                      Assistant Professor of Public Administration and
+                    </p>
+                    <p className="text-xl font-light leading-relaxed">
+                      PhD Student in Political Science
+                    </p>
+                  </div>
+
+                  <p className="text-lg font-light text-gray-200">
+                    University of Dhaka • Texas Tech University
                   </p>
-                  <p className="text-xl font-light leading-relaxed">
-                    PhD Student in Political Science
-                  </p>
-                </div>
 
-                <p className="text-lg font-light text-gray-200">
-                  University of Dhaka • Texas Tech University
-                </p>
+                  <div className="pt-4">
+                    <p className="text-lg font-light leading-relaxed">
+                      Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
+                    </p>
+                  </div>
 
-                <div className="pt-2">
-                  <p className="text-lg font-light leading-relaxed">
-                    Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
-                  </p>
-                </div>
-
-                <div className="pt-4 border-t border-white/30">
-                  <p className="text-base font-medium text-gray-100">
-                    J.T. and Margaret Talkington Graduate Fellow
-                  </p>
+                  <div className="pt-6 border-t border-white/30">
+                    <p className="text-base font-medium text-gray-100">
+                      J.T. and Margaret Talkington Graduate Fellow
+                    </p>
+                  </div>
                 </div>
               </div>
+
             </div>
-
-            {/* Right side - Empty (photo is background) */}
-            <div></div>
-
           </div>
         </div>
       </section>
