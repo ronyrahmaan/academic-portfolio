@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Layout from "@/components/Layout";
+import { useState } from "react";
 
 export default function Home() {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -73,41 +78,89 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="bg-stone-100 py-20 sm:py-32">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-base font-medium leading-7 text-stone-600">about</p>
-            <h2 className="mt-4 text-4xl font-light tracking-tight text-stone-800 sm:text-5xl">
+      <section className="bg-stone-50 py-24 sm:py-32">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold tracking-wider uppercase text-stone-500 mb-4">about</p>
+            <h2 className="text-5xl sm:text-6xl font-serif font-light tracking-tight text-stone-800 leading-tight">
               Dr. Rumi
             </h2>
-            <div className="mt-2 h-px bg-stone-400 mx-auto w-16"></div>
+            <div className="mt-6 w-24 h-0.5 bg-gradient-to-r from-stone-300 via-stone-600 to-stone-300 mx-auto"></div>
           </div>
 
-          <div className="max-w-3xl mx-auto text-base leading-7 text-stone-700">
-            <p className="text-lg leading-8 mb-8">
-              Maruf Hasan Rumi is an Assistant Professor at the University of Dhaka and a PhD Student in Political Science at Texas Tech University. He is a J.T. and Margaret Talkington Graduate Fellow, specializing in digital governance, social policy, technology, and behavioral science.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            {/* Main bio content */}
+            <div className="lg:col-span-2 space-y-8">
+              <div className="text-xl leading-relaxed text-stone-700 font-light">
+                <p>
+                  Maruf Hasan Rumi is a Distinguished Scholar bridging the worlds of <span className="font-medium text-stone-800">digital governance</span> and <span className="font-medium text-stone-800">public policy</span>. As an Assistant Professor at the University of Dhaka and PhD Student in Political Science at Texas Tech University, he stands at the forefront of understanding how technology reshapes democratic institutions and citizen engagement.
+                </p>
+              </div>
 
-            <p className="mb-8">
-              His influential research examines the interconnected areas of digital governance and public policy, with particular focus on how technology shapes administrative practices and citizen engagement. An accomplished scholar and educator, he has published extensively in Scopus and Web of Science-indexed journals, including <em>Frontiers in Sociology</em>, <em>PLOS Digital Health</em>, and the <em>Journal of Police and Criminal Psychology</em>.
-            </p>
+              <div className="text-base leading-relaxed text-stone-600 space-y-6">
+                <p>
+                  His groundbreaking research examines the interconnected histories of governance, technology, and behavioral science. An award-winning scholar and dedicated educator, he has contributed influential work to leading academic journals including <em>Frontiers in Sociology</em>, <em>PLOS Digital Health</em>, and the <em>Journal of Police and Criminal Psychology</em>, establishing him as a prominent voice in contemporary political science discourse.
+                </p>
 
-            <p className="mb-8">
-              Dr. Rumi has received numerous prestigious awards and fellowships, including the American Red Cross Research Grant (2024), Bangladesh Bureau of Educational Information and Statistics Fellowship (2024), and the UGC-Dhaka University Research Fellowship (2023). He serves on the Editorial Board of the Journal of Public Policy and Service Analysis and is an active member of professional organizations including the American Political Science Association and the Bangladesh Tobacco Control Research Network.
-            </p>
+                <div className={`${isExpanded ? 'block' : 'hidden'} space-y-6`}>
+                  <p>
+                    Dr. Rumi's scholarly excellence has been recognized through prestigious fellowships and grants, including the J.T. and Margaret Talkington Graduate Fellowship, American Red Cross Research Grant (2024), and the Bangladesh Bureau of Educational Information and Statistics Fellowship (2024). His work has been supported by leading institutions and has gained international recognition for its innovative approach to understanding governance in the digital age.
+                  </p>
 
-            <p>
-              Currently working on groundbreaking research in digital governance and social policy, Dr. Rumi brings together his expertise in behavioral science and public administration to address contemporary challenges in governance and technology. His work bridges academic scholarship with practical applications in public policy and administrative reform.
-            </p>
+                  <p>
+                    As an active member of the academic community, Dr. Rumi serves on the Editorial Board of the Journal of Public Policy and Service Analysis and maintains memberships in professional organizations including the American Political Science Association and the Bangladesh Tobacco Control Research Network. His commitment to advancing knowledge extends beyond research to mentoring the next generation of scholars and practitioners.
+                  </p>
+
+                  <p>
+                    Currently leading pioneering research in digital governance and social policy, Dr. Rumi's work bridges theoretical frameworks with practical applications in public administration reform. His scholarship addresses contemporary challenges at the intersection of technology, governance, and citizen empowerment, contributing to policy discussions that shape our digital democratic future.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Sidebar with highlights */}
+            <div className="lg:col-span-1">
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200">
+                <h3 className="text-lg font-semibold text-stone-800 mb-6">Research Focus</h3>
+                <div className="space-y-4 text-sm text-stone-600">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-stone-400 rounded-full"></div>
+                    <span>Digital Governance</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-stone-400 rounded-full"></div>
+                    <span>Social Policy</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-stone-400 rounded-full"></div>
+                    <span>Technology & Governance</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-stone-400 rounded-full"></div>
+                    <span>Behavioral Science</span>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-stone-200">
+                  <h4 className="text-sm font-semibold text-stone-800 mb-3">Current Fellowship</h4>
+                  <p className="text-sm text-stone-600 italic">
+                    J.T. and Margaret Talkington Graduate Fellow
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="text-center mt-12">
-            <a
-              href="#"
-              className="text-stone-600 hover:text-stone-800 font-medium text-sm tracking-wide"
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="inline-flex items-center text-stone-600 hover:text-stone-800 font-medium text-sm tracking-wide transition-colors duration-200 group"
             >
-              Read more
-            </a>
+              {isExpanded ? 'Read less' : 'Read more'}
+              <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
