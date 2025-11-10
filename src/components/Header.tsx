@@ -24,7 +24,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-2xl font-cinzel font-semibold text-slate-800 tracking-wider hover:text-slate-600 transition-colors duration-300"
+              className="text-2xl font-space-grotesk font-bold text-slate-800 tracking-tight hover:text-slate-600 transition-colors duration-300"
             >
               Maruf Hasan Rumi
             </Link>
@@ -37,7 +37,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="relative px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors duration-300 group"
+                  className="relative px-4 py-2 text-sm font-space-grotesk font-medium text-slate-600 hover:text-slate-900 transition-colors duration-300 group"
                 >
                   {item.name}
                   <span className="absolute inset-x-0 bottom-0 h-0.5 bg-slate-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
@@ -75,7 +75,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-3 text-base font-medium text-slate-600 hover:text-slate-900 hover:bg-stone-50 transition-colors duration-300"
+                  className="block px-4 py-3 text-base font-space-grotesk font-medium text-slate-600 hover:text-slate-900 hover:bg-stone-50 transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

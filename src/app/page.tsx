@@ -17,7 +17,7 @@ export default function Home() {
 
             {/* Left side - Content */}
             <div className="py-20 space-y-8 pr-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-cinzel font-medium leading-[0.9] text-gray-900 tracking-wide">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-space-grotesk font-bold leading-[0.9] text-gray-900 tracking-tight">
                 Maruf Hasan Rumi
               </h1>
 
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold tracking-wider uppercase text-stone-500 mb-4">about</p>
-            <h2 className="text-5xl sm:text-6xl font-cinzel font-medium tracking-wide text-stone-800 leading-tight">
+            <h2 className="text-5xl sm:text-6xl font-space-grotesk font-bold tracking-tight text-stone-800 leading-tight">
               Dr. Rumi
             </h2>
             <div className="mt-6 w-24 h-0.5 bg-gradient-to-r from-stone-300 via-stone-600 to-stone-300 mx-auto"></div>
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-block">
               <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-16 mx-auto mb-6"></div>
-              <h2 className="text-4xl sm:text-5xl font-cinzel font-medium tracking-wide text-slate-800 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-space-grotesk font-bold tracking-tight text-slate-800 mb-4">
                 Accolades
               </h2>
               <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-16 mx-auto"></div>
@@ -278,7 +278,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
+            <h2 className="text-3xl font-space-grotesk font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Explore my latest publications and scholarly work.
             </p>
@@ -322,7 +322,7 @@ export default function Home() {
       <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-space-grotesk font-bold tracking-tight text-gray-900 sm:text-4xl">
               Stay Updated
             </h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
