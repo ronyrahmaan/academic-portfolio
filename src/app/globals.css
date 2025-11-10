@@ -61,7 +61,7 @@ body {
 }
 
 .animate-scroll-left {
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 60s linear infinite;
 }
 
 /* Pause animation on hover */

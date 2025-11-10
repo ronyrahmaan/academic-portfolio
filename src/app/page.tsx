@@ -215,139 +215,139 @@ export default function Home() {
             <div className="overflow-hidden">
               <div className="flex animate-scroll-left">
                 {/* First set of accolades */}
-                <div className="flex space-x-12 min-w-full">
+                <div className="flex space-x-20 min-w-full">
                   {/* Award 1 - Texas Tech Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/1.svg"
                         alt="Texas Tech University Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2025 J.T. and Margaret Talkington Graduate Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Texas Tech University Distinguished Fellowship
                     </p>
                   </div>
 
                   {/* Award 2 - American Red Cross */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/red-cross-grant.png"
                         alt="American Red Cross Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2024 American Red Cross Research Grant
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Research Excellence Award
                     </p>
                   </div>
 
                   {/* Award 3 - Bangladesh Bureau Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/bangladesh-ministry.png"
                         alt="Bangladesh Ministry of Education Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2024 Bangladesh Bureau of Educational Information and Statistics Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Ministry of Education, Bangladesh
                     </p>
                   </div>
 
                   {/* Award 4 - University of Dhaka Research */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/dhaka university.png"
                         alt="University of Dhaka Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2023 UGC-Dhaka University Research Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       University Grants Commission Fellowship
                     </p>
                   </div>
 
                   {/* Award 5 - Dean's Award */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/dean.jpg"
                         alt="University of Dhaka Dean's Award Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2023 Dean's Award for Academic Excellence
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       University of Dhaka - Highest CGPA in Social Science Faculty
                     </p>
                   </div>
 
                   {/* Award 6 - UGC Scholarships */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/ugc-bangladesh.png"
                         alt="University Grants Commission Bangladesh Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2022 University Grants Commission Scholarships
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Government of Bangladesh Merit Scholarship
                     </p>
                   </div>
 
                   {/* Award 7 - Provost Award */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/provost-award.png"
                         alt="University Provost Award Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2020 Provost Award
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Highest CGPA in BSS (Hons) Examination
                     </p>
                   </div>
 
                   {/* Award 8 - Johns Hopkins Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/johns-hopkins.png"
                         alt="Johns Hopkins University Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2020 Bloomberg School of Public Health Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Johns Hopkins University - Tobacco Control
                     </p>
                   </div>
@@ -356,137 +356,137 @@ export default function Home() {
                 {/* Second set of accolades (duplicate for seamless loop) */}
                 <div className="flex space-x-12 min-w-full">
                   {/* Award 1 - Texas Tech Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/1.svg"
                         alt="Texas Tech University Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2025 J.T. and Margaret Talkington Graduate Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Texas Tech University Distinguished Fellowship
                     </p>
                   </div>
 
                   {/* Award 2 - American Red Cross */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/red-cross-grant.png"
                         alt="American Red Cross Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2024 American Red Cross Research Grant
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Research Excellence Award
                     </p>
                   </div>
 
                   {/* Award 3 - Bangladesh Bureau Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/bangladesh-ministry.png"
                         alt="Bangladesh Ministry of Education Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2024 Bangladesh Bureau of Educational Information and Statistics Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Ministry of Education, Bangladesh
                     </p>
                   </div>
 
                   {/* Award 4 - University of Dhaka Research */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/dhaka university.png"
                         alt="University of Dhaka Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2023 UGC-Dhaka University Research Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       University Grants Commission Fellowship
                     </p>
                   </div>
 
                   {/* Award 5 - Dean's Award */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/dean.jpg"
                         alt="University of Dhaka Dean's Award Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2023 Dean's Award for Academic Excellence
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       University of Dhaka - Highest CGPA in Social Science Faculty
                     </p>
                   </div>
 
                   {/* Award 6 - UGC Scholarships */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/ugc-bangladesh.png"
                         alt="University Grants Commission Bangladesh Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2022 University Grants Commission Scholarships
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Government of Bangladesh Merit Scholarship
                     </p>
                   </div>
 
                   {/* Award 7 - Provost Award */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/provost-award.png"
                         alt="University Provost Award Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2020 Provost Award
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Highest CGPA in BSS (Hons) Examination
                     </p>
                   </div>
 
                   {/* Award 8 - Johns Hopkins Fellowship */}
-                  <div className="flex flex-col items-center group min-w-[280px]">
-                    <div className="mb-6 group-hover:scale-105 transition-all duration-300">
+                  <div className="flex flex-col items-center group min-w-[300px] max-w-[300px]">
+                    <div className="mb-6 group-hover:scale-105 transition-all duration-300 bg-white/80 backdrop-blur-sm rounded-2xl p-4 shadow-lg">
                       <img
                         src="/johns-hopkins.png"
                         alt="Johns Hopkins University Logo"
-                        className="w-24 h-24 object-contain"
+                        className="w-20 h-20 object-contain mx-auto"
                       />
                     </div>
-                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
+                    <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight px-2 min-h-[3rem]">
                       2020 Bloomberg School of Public Health Fellowship
                     </h3>
-                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
+                    <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium px-2">
                       Johns Hopkins University - Tobacco Control
                     </p>
                   </div>
