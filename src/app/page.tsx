@@ -206,14 +206,11 @@ export default function Home() {
             {/* Award 2 - American Red Cross */}
             <div className="flex flex-col items-center group">
               <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-                <div className="w-28 h-28 rounded-full border-2 border-slate-300 flex items-center justify-center bg-gradient-to-br from-red-50 to-rose-100">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-red-800 mb-1">AMERICAN</div>
-                    <div className="text-lg font-bold text-slate-800">+</div>
-                    <div className="text-xs font-bold text-red-800 mb-1">RED CROSS</div>
-                    <div className="text-xs font-semibold text-red-600">2024</div>
-                  </div>
-                </div>
+                <img
+                  src="/red-cross-grant.png"
+                  alt="American Red Cross Logo"
+                  className="w-24 h-24 object-contain"
+                />
               </div>
               <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
                 2024 American Red Cross Research Grant
