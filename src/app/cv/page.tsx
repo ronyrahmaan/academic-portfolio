@@ -14,7 +14,8 @@ export default function CV() {
               Maruf Hasan Rumi
             </p>
             <p className="text-sm text-gray-500">
-              Assistant Professor, Department of Economics | Texas Tech University
+              Assistant Professor, Department of Public Administration | University of Dhaka<br />
+              PhD Student in Political Science | Texas Tech University
             </p>
           </div>
 

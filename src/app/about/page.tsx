@@ -11,7 +11,7 @@ export default function About() {
             Maruf Hasan Rumi
           </h1>
           <p className="mt-6 text-xl leading-8">
-            Assistant Professor of Economics at Texas Tech University, specializing in economic theory and policy analysis.
+            Assistant Professor of Public Administration at University of Dhaka and PhD Student in Political Science at Texas Tech University, specializing in digital governance, social policy, technology, and behavioral science.
           </p>
 
           <div className="mt-10 max-w-2xl">

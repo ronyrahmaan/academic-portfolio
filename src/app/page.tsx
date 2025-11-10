@@ -30,24 +30,24 @@ export default function Home() {
 
               <div className="space-y-4 text-lg font-light leading-relaxed">
                 <p>
-                  Distinguished Professor of Economics and
+                  Assistant Professor of Public Administration and
                 </p>
                 <p>
-                  Assistant Professor of Economics
+                  PhD Student in Political Science
                 </p>
                 <p>
-                  Texas Tech University
+                  University of Dhaka • Texas Tech University
                 </p>
 
                 <div className="pt-4">
                   <p>
-                    Specializing in Economic Theory, Policy Analysis, Development Economics, and Public Finance
+                    Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
                   </p>
                 </div>
 
                 <div className="pt-6">
                   <p>
-                    2024 Research Excellence Award
+                    J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
               </div>
