@@ -45,32 +45,42 @@ export default function About() {
               <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Research Interests</h2>
               <ul role="list" className="mt-8 max-w-xl space-y-6 text-gray-600 font-space-grotesk">
                 <li className="flex items-start gap-x-4">
-                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 bg-blue-600 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600">
+                    <svg fill="currentColor" viewBox="0 0 20 20" className="h-5 w-5">
+                      <path fillRule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                    </svg>
                   </div>
                   <span><strong>Digital Governance and E-Administration:</strong> Exploring how technology transforms public service delivery, citizen engagement, and democratic participation in developing countries</span>
                 </li>
                 <li className="flex items-start gap-x-4">
-                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 bg-green-600 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-600">
+                    <svg fill="currentColor" viewBox="0 0 20 20" className="h-5 w-5">
+                      <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                    </svg>
                   </div>
                   <span><strong>Gender and Social Policy:</strong> Investigating women's representation in politics and administration, digital health equity, and empowerment through civic engagement</span>
                 </li>
                 <li className="flex items-start gap-x-4">
-                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 bg-purple-600 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-purple-600">
+                    <svg fill="currentColor" viewBox="0 0 20 20" className="h-5 w-5">
+                      <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
                   </div>
                   <span><strong>Trust in Public Institutions:</strong> Analyzing citizen trust in police, local governance, and the effectiveness of alternative dispute resolution mechanisms</span>
                 </li>
                 <li className="flex items-start gap-x-4">
-                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 bg-orange-600 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-orange-600">
+                    <svg fill="currentColor" viewBox="0 0 20 20" className="h-5 w-5">
+                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                    </svg>
                   </div>
                   <span><strong>Technology and Social Change:</strong> Examining the impact of fourth industrial revolution, digital health technologies, and migration-security nexus in Southeast Asia</span>
                 </li>
                 <li className="flex items-start gap-x-4">
-                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 bg-red-600 rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-red-600">
+                    <svg fill="currentColor" viewBox="0 0 20 20" className="h-5 w-5">
+                      <path fillRule="evenodd" d="M3 4a1 1 0 011-1h4a1 1 0 010 2H6.414l2.293 2.293a1 1 0 01.293.707v6.586l-2-2V9a1 1 0 10-2 0v3.586l-2 2V8.414L5.414 6H4a1 1 0 01-1-1V4zm9 1h4a1 1 0 110 2h-1.586l2.293 2.293a1 1 0 01.293.707v2.586l-2-2V9a1 1 0 10-2 0v1.586l-2 2V8.414L12.586 6H12a1 1 0 010-2z" clipRule="evenodd" />
+                    </svg>
                   </div>
                   <span><strong>Crisis Response and Social Protection:</strong> Evaluating emergency social protection measures, cash transfer programs, and labor market interventions during crises</span>
                 </li>
