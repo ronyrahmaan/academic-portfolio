@@ -6,17 +6,17 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-800">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0 items-center min-h-screen">
 
             {/* Left side - Content */}
             <div className="py-20 space-y-8 pr-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[0.9] text-white tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[0.9] text-gray-900 tracking-tight">
                 Maruf Hasan Rumi
               </h1>
 
-              <div className="space-y-6 text-white">
+              <div className="space-y-6 text-gray-800">
                 <div className="space-y-3">
                   <p className="text-xl font-light leading-relaxed">
                     Assistant Professor of Public Administration and
@@ -26,7 +26,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <p className="text-lg font-light text-gray-300">
+                <p className="text-lg font-light text-gray-600">
                   University of Dhaka • Texas Tech University
                 </p>
 
@@ -36,8 +36,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="pt-6 border-t border-white/30">
-                  <p className="text-base font-medium text-gray-100">
+                <div className="pt-6 border-t border-gray-300">
+                  <p className="text-base font-medium text-gray-700">
                     J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
@@ -62,9 +62,9 @@ export default function Home() {
                 </div>
 
                 {/* Premium decorative elements */}
-                <div className="absolute -inset-4 bg-blue-500/10 rounded-3xl blur-xl -z-10"></div>
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl"></div>
-                <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl"></div>
+                <div className="absolute -inset-4 bg-purple-200/30 rounded-3xl blur-xl -z-10"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-200/40 rounded-full blur-2xl"></div>
+                <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-indigo-200/40 rounded-full blur-2xl"></div>
               </div>
             </div>
 
