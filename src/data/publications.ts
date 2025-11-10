@@ -71,12 +71,14 @@ export const publications: Publication[] = [
     id: 'pub-007',
     title: 'Empowerment through engagement: female university students\' involvement in volunteering activities',
     authors: ['Maruf Hasan Rumi'],
-    journal: 'Southeast Asia Journal',
+    journal: 'Southeast Asia: A Multidisciplinary Journal',
     year: '2024',
     type: 'journal',
     category: 'Gender and Education',
     abstract: 'Exploring how volunteering activities contribute to the empowerment of female university students in Southeast Asia.',
-    keywords: ['Student empowerment', 'Volunteering', 'Female students', 'Southeast Asia', 'Civic engagement']
+    keywords: ['Student empowerment', 'Volunteering', 'Female students', 'Southeast Asia', 'Civic engagement'],
+    doi: '10.1108/SEAMJ-08-2023-0062',
+    url: 'https://www.emerald.com/insight/content/doi/10.1108/SEAMJ-08-2023-0062/full/html'
   },
   {
     id: 'pub-008',
@@ -87,7 +89,9 @@ export const publications: Publication[] = [
     type: 'journal',
     category: 'Criminal Justice and Policing',
     abstract: 'A comprehensive study of citizen trust in law enforcement institutions in Bangladesh, examining factors that influence public confidence in police services.',
-    keywords: ['Police trust', 'Citizen satisfaction', 'Law enforcement', 'Bangladesh', 'Public safety']
+    keywords: ['Police trust', 'Citizen satisfaction', 'Law enforcement', 'Bangladesh', 'Public safety'],
+    doi: '10.1093/police/paae064',
+    url: 'https://academic.oup.com/policing/article/doi/10.1093/police/paae064/7688173'
   },
   {
     id: 'pub-009',
@@ -98,7 +102,9 @@ export const publications: Publication[] = [
     type: 'journal',
     category: 'Digital Health and Equity',
     abstract: 'Examining digital health disparities affecting women and proposing policy interventions to promote equitable access to digital health technologies.',
-    keywords: ['Digital health', 'Health equity', 'Women\'s health', 'Technology access', 'Health policy']
+    keywords: ['Digital health', 'Health equity', 'Women\'s health', 'Technology access', 'Health policy'],
+    doi: '10.1371/journal.pdig.0000637',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/39405293/'
   },
   {
     id: 'pub-010',
@@ -167,55 +173,70 @@ export const publications: Publication[] = [
   },
   {
     id: 'pub-016',
-    title: 'Knowledge, attitude and practice of rural people on antibiotic usage',
-    authors: ['Maruf Hasan Rumi'],
+    title: 'Knowledge, attitude and practice of rural people on antibiotic usage: Bangladesh perspective',
+    authors: ['Niaz Makhdum', 'Naznin Islam', 'Maruf Hasan Rumi', 'Md Harunur Rashid'],
+    journal: 'Journal of Health Management',
     year: '2022',
     type: 'journal',
     category: 'Public Health',
     abstract: 'A study of rural populations\' knowledge, attitudes, and practices regarding antibiotic usage and their implications for public health policy.',
-    keywords: ['Antibiotic resistance', 'Rural health', 'Health behavior', 'Bangladesh', 'Public health']
+    keywords: ['Antibiotic resistance', 'Rural health', 'Health behavior', 'Bangladesh', 'Public health'],
+    doi: '10.1177/09720634221088067',
+    url: 'https://doi.org/10.1177/09720634221088067'
   },
   {
     id: 'pub-017',
-    title: 'Measuring Quality of Public Participation in Local Government',
-    authors: ['Maruf Hasan Rumi'],
+    title: 'Measuring Quality of Public Participation in the Local Government of Bangladesh',
+    authors: ['Niaz Makhdum', 'Maruf Hasan Rumi', 'Naznin Islam'],
+    journal: 'Journal of Public Administration and Governance',
     year: '2022',
     type: 'journal',
     category: 'Local Government',
     abstract: 'Developing metrics and frameworks for assessing the quality and effectiveness of public participation in local governance processes.',
-    keywords: ['Public participation', 'Local government', 'Governance quality', 'Democratic participation', 'Measurement']
+    keywords: ['Public participation', 'Local government', 'Governance quality', 'Democratic participation', 'Measurement'],
+    doi: '10.5296/jpag.v11i4.19279',
+    url: 'https://doi.org/10.5296/jpag.v11i4.19279'
   },
 
   // 2021 Publications
   {
     id: 'pub-018',
-    title: 'Patients\' satisfaction on service quality of Upazila Health Complex',
-    authors: ['Maruf Hasan Rumi'],
+    title: 'Patients\' satisfaction on the service quality of Upazila Health Complex in Bangladesh',
+    authors: ['Maruf Hasan Rumi', 'Niaz Makhdum', 'Md Harunur Rashid', 'Abdul Muyeed'],
+    journal: 'Journal of Patient Experience',
     year: '2021',
     type: 'journal',
     category: 'Health Services',
     abstract: 'Evaluating patient satisfaction levels with health services provided at Upazila Health Complexes in Bangladesh.',
-    keywords: ['Patient satisfaction', 'Health services', 'Service quality', 'Bangladesh', 'Healthcare delivery']
+    keywords: ['Patient satisfaction', 'Health services', 'Service quality', 'Bangladesh', 'Healthcare delivery'],
+    doi: '10.1177/23743735211034054',
+    url: 'https://doi.org/10.1177/23743735211034054'
   },
   {
     id: 'pub-019',
-    title: 'Customer Satisfaction of Bangladesh Railway E-Ticketing System',
-    authors: ['Maruf Hasan Rumi'],
+    title: 'Customer Satisfaction of Bangladesh Railway E-Ticketing System: A Gender Perspective',
+    authors: ['Zannatul Ferdous', 'Fawziyah Faiza Islam', 'Farabi NA Rahman', 'Maruf Hasan Rumi'],
+    journal: 'Bangladesh Journal of Public Administration',
     year: '2021',
     type: 'journal',
     category: 'Digital Services',
     abstract: 'Assessment of customer satisfaction with the digital ticketing system implemented by Bangladesh Railway.',
-    keywords: ['E-ticketing', 'Customer satisfaction', 'Digital services', 'Bangladesh Railway', 'Technology adoption']
+    keywords: ['E-ticketing', 'Customer satisfaction', 'Digital services', 'Bangladesh Railway', 'Technology adoption'],
+    doi: '10.36609/bjpa.v29i3.94',
+    url: 'https://doi.org/10.36609/bjpa.v29i3.94'
   },
   {
     id: 'pub-020',
-    title: 'Future tradeoff under fourth industrial revolution in Bangladesh',
-    authors: ['Maruf Hasan Rumi'],
+    title: 'Future tradeoff under fourth industrial revolution in Bangladesh: a study on RMG sector',
+    authors: ['Maruf Hasan Rumi', 'Shukti Bala', 'AMM Mubassher Shah', 'Md Abu Sayem', 'Md Minhajul Abedin'],
+    journal: 'International Journal of Social, Political and Economic Research',
     year: '2021',
     type: 'journal',
     category: 'Technology and Society',
     abstract: 'Analyzing the potential tradeoffs and challenges Bangladesh faces in adapting to the fourth industrial revolution.',
-    keywords: ['Fourth industrial revolution', 'Technology policy', 'Bangladesh', 'Economic development', 'Future planning']
+    keywords: ['Fourth industrial revolution', 'Technology policy', 'Bangladesh', 'Economic development', 'Future planning'],
+    doi: '10.46291',
+    url: 'https://doi.org/10.46291'
   }
 ];
 
