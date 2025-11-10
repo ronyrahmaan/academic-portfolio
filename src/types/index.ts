@@ -54,3 +54,21 @@ export interface CVItem {
   date: string;
   description?: string;
 }
+
+export interface Publication {
+  id: string;
+  title: string;
+  authors: string[];
+  journal?: string;
+  publisher?: string;
+  year: string;
+  volume?: string;
+  issue?: string;
+  pages?: string;
+  doi?: string;
+  url?: string;
+  type: 'journal' | 'book-chapter' | 'conference' | 'working-paper';
+  abstract?: string;
+  keywords?: string[];
+  category?: string;
+}
