@@ -6,46 +6,55 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-50 to-white py-20 sm:py-32">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8 items-center">
-            {/* Left side - Photo */}
-            <div className="order-2 lg:order-1">
-              <Image
-                src="/Rumi, Maruf Hasan (Headshot 5).jpg"
-                alt="Maruf Hasan Rumi"
-                className="w-full max-w-lg mx-auto aspect-[4/5] rounded-2xl object-cover shadow-2xl"
-                width={500}
-                height={625}
-              />
-            </div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/Rumi, Maruf Hasan (Headshot 5).jpg"
+            alt="Maruf Hasan Rumi"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        </div>
 
-            {/* Right side - Content */}
-            <div className="order-1 lg:order-2">
-              <h1 className="text-5xl font-light tracking-tight text-gray-900 sm:text-6xl xl:text-7xl">
+        {/* Content Overlay */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 items-center min-h-screen">
+            {/* Left side - Content */}
+            <div className="text-white py-20">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-normal leading-tight mb-6">
                 Maruf Hasan Rumi
               </h1>
-              <div className="mt-8 space-y-6">
-                <p className="text-xl leading-8 text-gray-700 font-light">
-                  Academic researcher, author, and public intellectual specializing in economics.
+
+              <div className="space-y-4 text-lg font-light leading-relaxed">
+                <p>
+                  Distinguished Professor of Economics and
                 </p>
-                <p className="text-lg leading-7 text-gray-600">
-                  Assistant Professor, Department of Economics<br />
+                <p>
+                  Assistant Professor of Economics
+                </p>
+                <p>
                   Texas Tech University
                 </p>
-                <div className="mt-12 flex items-center gap-x-6">
-                  <Link
-                    href="/books"
-                    className="rounded-none bg-gray-900 px-6 py-3 text-sm font-medium text-white shadow-lg hover:bg-gray-800 transition-all duration-200 hover:shadow-xl"
-                  >
-                    View Books
-                  </Link>
-                  <Link href="/cv" className="text-sm font-medium leading-6 text-gray-900 hover:text-gray-700 transition-colors group">
-                    Download CV <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">→</span>
-                  </Link>
+
+                <div className="pt-4">
+                  <p>
+                    Specializing in Economic Theory, Policy Analysis, Development Economics, and Public Finance
+                  </p>
+                </div>
+
+                <div className="pt-6">
+                  <p>
+                    2024 Research Excellence Award
+                  </p>
                 </div>
               </div>
             </div>
+
+            {/* Right side - Empty for image background */}
+            <div></div>
           </div>
         </div>
       </section>
