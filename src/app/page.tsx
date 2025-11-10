@@ -6,35 +6,38 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-r from-gray-50 via-white to-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 items-center min-h-screen">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 items-center min-h-screen">
 
             {/* Left side - Content */}
-            <div className="py-20">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-normal leading-tight mb-8 text-gray-900">
+            <div className="py-20 space-y-8">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-serif font-light leading-[1.1] text-gray-900 tracking-tight">
                 Maruf Hasan Rumi
               </h1>
 
-              <div className="space-y-4 text-lg font-light leading-relaxed text-gray-900">
-                <p>
-                  Assistant Professor of Public Administration and
-                </p>
-                <p>
-                  PhD Student in Political Science
-                </p>
-                <p>
+              <div className="space-y-6 text-gray-700 max-w-xl">
+                <div className="space-y-2">
+                  <p className="text-xl font-light leading-relaxed">
+                    Assistant Professor of Public Administration and
+                  </p>
+                  <p className="text-xl font-light leading-relaxed">
+                    PhD Student in Political Science
+                  </p>
+                </div>
+
+                <p className="text-lg font-light text-gray-600">
                   University of Dhaka • Texas Tech University
                 </p>
 
-                <div className="pt-4">
-                  <p>
+                <div className="pt-2">
+                  <p className="text-lg font-light leading-relaxed">
                     Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
                   </p>
                 </div>
 
-                <div className="pt-6">
-                  <p>
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="text-base font-medium text-gray-800">
                     J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
@@ -42,16 +45,29 @@ export default function Home() {
             </div>
 
             {/* Right side - Photo */}
-            <div className="flex justify-end">
-              <div className="relative w-full max-w-lg">
-                <Image
-                  src="/Rumi, Maruf Hasan (Headshot 5).jpg"
-                  alt="Maruf Hasan Rumi"
-                  width={500}
-                  height={625}
-                  className="w-full h-auto object-cover rounded-lg"
-                  priority
-                />
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                {/* Background blur effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-gray-100 rounded-3xl transform rotate-3 scale-105 opacity-30"></div>
+
+                {/* Main photo container */}
+                <div className="relative bg-white p-4 rounded-3xl shadow-2xl">
+                  <Image
+                    src="/Rumi, Maruf Hasan (Headshot 5).jpg"
+                    alt="Maruf Hasan Rumi"
+                    width={450}
+                    height={550}
+                    className="w-full h-auto object-cover rounded-2xl"
+                    priority
+                  />
+
+                  {/* Subtle overlay gradient */}
+                  <div className="absolute inset-4 rounded-2xl bg-gradient-to-t from-black/5 via-transparent to-transparent"></div>
+                </div>
+
+                {/* Additional decorative elements */}
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-100 rounded-full opacity-20"></div>
+                <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gray-200 rounded-full opacity-30"></div>
               </div>
             </div>
 
