@@ -199,7 +199,7 @@ export default function Home() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-slate-200/10 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+        <div className="relative">
           <div className="text-center mb-16">
             <div className="inline-block">
               <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-16 mx-auto mb-6"></div>
@@ -210,12 +210,11 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Auto-scrolling carousel */}
-          <div className="relative">
-            <div className="overflow-hidden">
-              <div className="flex animate-scroll-left">
-                {/* First set of accolades */}
-                <div className="flex space-x-32 min-w-full">
+          {/* Full-width auto-scrolling carousel */}
+          <div className="relative w-full overflow-hidden">
+            <div className="flex animate-scroll-left">
+              {/* First set of accolades */}
+              <div className="flex space-x-40 min-w-full pl-8">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[400px] max-w-[400px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
@@ -354,7 +353,7 @@ export default function Home() {
                 </div>
 
                 {/* Second set of accolades (duplicate for seamless loop) */}
-                <div className="flex space-x-12 min-w-full">
+                <div className="flex space-x-40 min-w-full pl-8">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[400px] max-w-[400px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
