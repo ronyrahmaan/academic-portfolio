@@ -495,6 +495,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Featured Books Section */}
       <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
