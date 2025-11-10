@@ -185,17 +185,17 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 lg:gap-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12">
             {/* Award 1 - Texas Tech Fellowship */}
             <div className="flex flex-col items-center group">
-              <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300">
                 <img
                   src="/1.svg"
                   alt="Texas Tech University Logo"
-                  className="w-20 h-20 object-contain"
+                  className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
+              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 2025 J.T. and Margaret Talkington Graduate Fellowship
               </h3>
               <p className="text-xs text-center text-slate-600 font-medium">
@@ -205,14 +205,14 @@ export default function Home() {
 
             {/* Award 2 - American Red Cross */}
             <div className="flex flex-col items-center group">
-              <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300">
                 <img
                   src="/red-cross-grant.png"
                   alt="American Red Cross Logo"
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
+              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 2024 American Red Cross Research Grant
               </h3>
               <p className="text-xs text-center text-slate-600 font-medium">
@@ -222,14 +222,14 @@ export default function Home() {
 
             {/* Award 3 - University of Dhaka */}
             <div className="flex flex-col items-center group">
-              <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/en/b/b9/University_of_Dhaka_logo.svg"
                   alt="University of Dhaka Logo"
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
+              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 2023 UGC-Dhaka University Research Fellowship
               </h3>
               <p className="text-xs text-center text-slate-600 font-medium">
@@ -239,17 +239,15 @@ export default function Home() {
 
             {/* Award 4 - Dean's Award */}
             <div className="flex flex-col items-center group">
-              <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-                <div className="w-28 h-28 rounded-full border-2 border-slate-300 flex items-center justify-center bg-gradient-to-br from-amber-50 to-yellow-100">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-amber-800 mb-1">DEAN'S</div>
-                    <div className="text-2xl font-bold text-slate-800">★</div>
-                    <div className="text-xs font-bold text-amber-800 mb-1">AWARD</div>
-                    <div className="text-xs font-semibold text-amber-600">2023</div>
-                  </div>
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300 w-24 h-24 flex items-center justify-center bg-gradient-to-br from-amber-100 to-yellow-200 rounded-2xl shadow-lg">
+                <div className="text-center">
+                  <div className="text-xs font-bold text-amber-800 mb-1">DEAN'S</div>
+                  <div className="text-2xl font-bold text-slate-800">★</div>
+                  <div className="text-xs font-bold text-amber-800 mb-1">AWARD</div>
+                  <div className="text-xs font-semibold text-amber-600">2023</div>
                 </div>
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
+              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 2023 Dean's Award
               </h3>
               <p className="text-xs text-center text-slate-600 font-medium">
@@ -259,16 +257,14 @@ export default function Home() {
 
             {/* Award 5 - APSA */}
             <div className="flex flex-col items-center group">
-              <div className="w-32 h-32 rounded-full bg-white shadow-xl border-4 border-slate-200 flex items-center justify-center mb-6 group-hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
-                <div className="w-28 h-28 rounded-full border-2 border-slate-300 flex items-center justify-center bg-gradient-to-br from-purple-50 to-violet-100">
-                  <div className="text-center">
-                    <div className="text-xs font-bold text-purple-800 mb-1">AMERICAN</div>
-                    <div className="text-lg font-bold text-slate-800">APSA</div>
-                    <div className="text-xs font-bold text-purple-800">MEMBER</div>
-                  </div>
+              <div className="mb-6 group-hover:scale-105 transition-all duration-300 w-24 h-24 flex items-center justify-center bg-gradient-to-br from-purple-100 to-violet-200 rounded-2xl shadow-lg">
+                <div className="text-center">
+                  <div className="text-xs font-bold text-purple-800 mb-1">AMERICAN</div>
+                  <div className="text-lg font-bold text-slate-800">APSA</div>
+                  <div className="text-xs font-bold text-purple-800">MEMBER</div>
                 </div>
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight max-w-32">
+              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
                 American Political Science Association
               </h3>
               <p className="text-xs text-center text-slate-600 font-medium">
