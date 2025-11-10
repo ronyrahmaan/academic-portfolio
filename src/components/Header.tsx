@@ -24,7 +24,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link
               href="/"
-              className="text-2xl font-space-grotesk font-bold text-slate-800 tracking-tight hover:text-slate-600 transition-colors duration-300"
+              className="text-2xl font-cinzel font-bold text-slate-800 tracking-tight hover:text-slate-600 transition-colors duration-300"
             >
               Maruf Hasan Rumi
             </Link>

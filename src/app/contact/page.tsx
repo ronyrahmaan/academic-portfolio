@@ -43,10 +43,10 @@ export default function Contact() {
       <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">
               Contact
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk">
               I welcome inquiries about speaking engagements, media interviews, collaboration opportunities, and general questions about my research.
             </p>
           </div>
@@ -54,7 +54,7 @@ export default function Contact() {
           <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-16 sm:grid-cols-2">
             {/* Contact Information */}
             <div>
-              <h3 className="text-lg font-semibold text-gray-900">Contact Information</h3>
+              <h3 className="text-lg font-cinzel font-semibold text-gray-900">Contact Information</h3>
               <div className="mt-6 space-y-4">
                 <div>
                   <div className="flex">
@@ -64,8 +64,8 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">Email</p>
-                      <p className="text-sm text-gray-600">your.email@university.edu</p>
+                      <p className="text-sm font-cinzel font-medium text-gray-900">Email</p>
+                      <p className="text-sm text-gray-600 font-space-grotesk">your.email@university.edu</p>
                     </div>
                   </div>
                 </div>
@@ -79,8 +79,8 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">Office</p>
-                      <p className="text-sm text-gray-600">
+                      <p className="text-sm font-cinzel font-medium text-gray-900">Office</p>
+                      <p className="text-sm text-gray-600 font-space-grotesk">
                         Building Name, Room 123<br />
                         Department of [Your Department]<br />
                         University Name<br />
@@ -98,8 +98,8 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div className="ml-3">
-                      <p className="text-sm font-medium text-gray-900">Phone</p>
-                      <p className="text-sm text-gray-600">(555) 123-4567</p>
+                      <p className="text-sm font-cinzel font-medium text-gray-900">Phone</p>
+                      <p className="text-sm text-gray-600 font-space-grotesk">(555) 123-4567</p>
                     </div>
                   </div>
                 </div>
@@ -107,8 +107,8 @@ export default function Contact() {
 
               {/* Office Hours */}
               <div className="mt-8">
-                <h4 className="text-base font-semibold text-gray-900">Office Hours</h4>
-                <div className="mt-3 text-sm text-gray-600">
+                <h4 className="text-base font-cinzel font-semibold text-gray-900">Office Hours</h4>
+                <div className="mt-3 text-sm text-gray-600 font-space-grotesk">
                   <p>Tuesday & Thursday: 2:00 PM - 4:00 PM</p>
                   <p>Or by appointment</p>
                 </div>
@@ -116,21 +116,21 @@ export default function Contact() {
 
               {/* Social Media */}
               <div className="mt-8">
-                <h4 className="text-base font-semibold text-gray-900">Connect</h4>
+                <h4 className="text-base font-cinzel font-semibold text-gray-900">Connect</h4>
                 <div className="mt-3 space-y-2">
-                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900 font-space-grotesk">
                     <span className="mr-2">📧</span>
                     Newsletter Signup
                   </a>
-                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900 font-space-grotesk">
                     <span className="mr-2">🐦</span>
                     Twitter
                   </a>
-                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900 font-space-grotesk">
                     <span className="mr-2">💼</span>
                     LinkedIn
                   </a>
-                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900">
+                  <a href="#" className="flex items-center text-sm text-gray-600 hover:text-gray-900 font-space-grotesk">
                     <span className="mr-2">🎓</span>
                     Academic Profile
                   </a>
@@ -142,7 +142,7 @@ export default function Contact() {
             <div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="type" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="type" className="block text-sm font-cinzel font-medium text-gray-900">
                     Type of Inquiry
                   </label>
                   <select
@@ -150,7 +150,7 @@ export default function Contact() {
                     id="type"
                     value={formData.type}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   >
                     <option value="general">General Question</option>
                     <option value="speaking">Speaking Engagement</option>
@@ -161,7 +161,7 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="name" className="block text-sm font-cinzel font-medium text-gray-900">
                     Name
                   </label>
                   <input
@@ -171,12 +171,12 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="email" className="block text-sm font-cinzel font-medium text-gray-900">
                     Email
                   </label>
                   <input
@@ -186,12 +186,12 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="organization" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="organization" className="block text-sm font-cinzel font-medium text-gray-900">
                     Organization (Optional)
                   </label>
                   <input
@@ -200,12 +200,12 @@ export default function Contact() {
                     id="organization"
                     value={formData.organization}
                     onChange={handleInputChange}
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="subject" className="block text-sm font-cinzel font-medium text-gray-900">
                     Subject
                   </label>
                   <input
@@ -215,12 +215,12 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="message" className="block text-sm font-cinzel font-medium text-gray-900">
                     Message
                   </label>
                   <textarea
@@ -230,14 +230,14 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                    className="mt-1 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                   />
                 </div>
 
                 <div>
                   <button
                     type="submit"
-                    className="flex w-full justify-center rounded-md bg-gray-900 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                    className="flex w-full justify-center rounded-md bg-gray-900 px-3 py-1.5 text-sm font-cinzel font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
                   >
                     Send Message
                   </button>

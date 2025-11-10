@@ -17,32 +17,32 @@ export default function Home() {
 
             {/* Left side - Content */}
             <div className="py-20 space-y-8 pr-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-space-grotesk font-bold leading-[0.9] text-gray-900 tracking-tight">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-cinzel font-bold leading-[0.9] text-gray-900 tracking-tight">
                 Maruf Hasan Rumi
               </h1>
 
               <div className="space-y-6 text-gray-800">
                 <div className="space-y-3">
-                  <p className="text-xl font-light leading-relaxed">
+                  <p className="text-xl font-space-grotesk font-light leading-relaxed">
                     Assistant Professor of Public Administration and
                   </p>
-                  <p className="text-xl font-light leading-relaxed">
+                  <p className="text-xl font-space-grotesk font-light leading-relaxed">
                     PhD Student in Political Science
                   </p>
                 </div>
 
-                <p className="text-lg font-light text-gray-600">
+                <p className="text-lg font-space-grotesk font-light text-gray-600">
                   University of Dhaka • Texas Tech University
                 </p>
 
                 <div className="pt-3">
-                  <p className="text-lg font-light leading-relaxed">
+                  <p className="text-lg font-space-grotesk font-light leading-relaxed">
                     Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
                   </p>
                 </div>
 
                 <div className="pt-6 border-t border-gray-300">
-                  <p className="text-base font-medium text-gray-700">
+                  <p className="text-base font-space-grotesk font-medium text-gray-700">
                     J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold tracking-wider uppercase text-stone-500 mb-4">about</p>
-            <h2 className="text-5xl sm:text-6xl font-space-grotesk font-bold tracking-tight text-stone-800 leading-tight">
+            <h2 className="text-5xl sm:text-6xl font-cinzel font-bold tracking-tight text-stone-800 leading-tight">
               Dr. Rumi
             </h2>
             <div className="mt-6 w-24 h-0.5 bg-gradient-to-r from-stone-300 via-stone-600 to-stone-300 mx-auto"></div>
@@ -92,26 +92,26 @@ export default function Home() {
             {/* Main bio content */}
             <div className="lg:col-span-2 space-y-8">
               <div className="text-xl leading-relaxed text-stone-700 font-light">
-                <p>
+                <p className="font-space-grotesk">
                   Maruf Hasan Rumi is a Distinguished Scholar bridging the worlds of <span className="font-medium text-stone-800">digital governance</span> and <span className="font-medium text-stone-800">public policy</span>. As an Assistant Professor at the University of Dhaka and PhD Student in Political Science at Texas Tech University, he stands at the forefront of understanding how technology reshapes democratic institutions and citizen engagement.
                 </p>
               </div>
 
               <div className="text-base leading-relaxed text-stone-600 space-y-6">
-                <p>
+                <p className="font-space-grotesk">
                   His groundbreaking research examines the interconnected histories of governance, technology, and behavioral science. An award-winning scholar and dedicated educator, he has contributed influential work to leading academic journals including <em>Frontiers in Sociology</em>, <em>PLOS Digital Health</em>, and the <em>Journal of Police and Criminal Psychology</em>, establishing him as a prominent voice in contemporary political science discourse.
                 </p>
 
                 <div className={`${isExpanded ? 'block' : 'hidden'} space-y-6`}>
-                  <p>
+                  <p className="font-space-grotesk">
                     Dr. Rumi's scholarly excellence has been recognized through prestigious fellowships and grants, including the J.T. and Margaret Talkington Graduate Fellowship, American Red Cross Research Grant (2024), and the Bangladesh Bureau of Educational Information and Statistics Fellowship (2024). His work has been supported by leading institutions and has gained international recognition for its innovative approach to understanding governance in the digital age.
                   </p>
 
-                  <p>
+                  <p className="font-space-grotesk">
                     As an active member of the academic community, Dr. Rumi serves on the Editorial Board of the Journal of Public Policy and Service Analysis and maintains memberships in professional organizations including the American Political Science Association and the Bangladesh Tobacco Control Research Network. His commitment to advancing knowledge extends beyond research to mentoring the next generation of scholars and practitioners.
                   </p>
 
-                  <p>
+                  <p className="font-space-grotesk">
                     Currently leading pioneering research in digital governance and social policy, Dr. Rumi's work bridges theoretical frameworks with practical applications in public administration reform. His scholarship addresses contemporary challenges at the intersection of technology, governance, and citizen empowerment, contributing to policy discussions that shape our digital democratic future.
                   </p>
                 </div>
@@ -121,8 +121,8 @@ export default function Home() {
             {/* Sidebar with highlights */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-2xl p-8 shadow-sm border border-stone-200">
-                <h3 className="text-lg font-semibold text-stone-800 mb-6">Research Focus</h3>
-                <div className="space-y-4 text-sm text-stone-600">
+                <h3 className="text-lg font-cinzel font-semibold text-stone-800 mb-6">Research Focus</h3>
+                <div className="space-y-4 text-sm text-stone-600 font-space-grotesk">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-stone-400 rounded-full"></div>
                     <span>Digital Governance</span>
@@ -142,8 +142,8 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-stone-200">
-                  <h4 className="text-sm font-semibold text-stone-800 mb-3">Current Fellowship</h4>
-                  <p className="text-sm text-stone-600 italic">
+                  <h4 className="text-sm font-cinzel font-semibold text-stone-800 mb-3">Current Fellowship</h4>
+                  <p className="text-sm text-stone-600 italic font-space-grotesk">
                     J.T. and Margaret Talkington Graduate Fellow
                   </p>
                 </div>
@@ -154,7 +154,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <button
               onClick={() => setIsExpanded(!isExpanded)}
-              className="inline-flex items-center text-stone-600 hover:text-stone-800 font-medium text-sm tracking-wide transition-colors duration-200 group"
+              className="inline-flex items-center text-stone-600 hover:text-stone-800 font-space-grotesk font-medium text-sm tracking-wide transition-colors duration-200 group"
             >
               {isExpanded ? 'Read less' : 'Read more'}
               <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -178,7 +178,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-block">
               <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-16 mx-auto mb-6"></div>
-              <h2 className="text-4xl sm:text-5xl font-space-grotesk font-bold tracking-tight text-slate-800 mb-4">
+              <h2 className="text-4xl sm:text-5xl font-cinzel font-bold tracking-tight text-slate-800 mb-4">
                 Accolades
               </h2>
               <div className="h-px bg-gradient-to-r from-transparent via-slate-400 to-transparent w-16 mx-auto"></div>
@@ -195,10 +195,10 @@ export default function Home() {
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
+              <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
                 2025 J.T. and Margaret Talkington Graduate Fellowship
               </h3>
-              <p className="text-xs text-center text-slate-600 font-medium">
+              <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
                 Texas Tech University Distinguished Fellowship
               </p>
             </div>
@@ -212,10 +212,10 @@ export default function Home() {
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
+              <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
                 2024 American Red Cross Research Grant
               </h3>
-              <p className="text-xs text-center text-slate-600 font-medium">
+              <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
                 Research Excellence Award
               </p>
             </div>
@@ -229,10 +229,10 @@ export default function Home() {
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
+              <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
                 2023 UGC-Dhaka University Research Fellowship
               </h3>
-              <p className="text-xs text-center text-slate-600 font-medium">
+              <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
                 University Grants Commission Fellowship
               </p>
             </div>
@@ -246,10 +246,10 @@ export default function Home() {
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
+              <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
                 2023 Dean's Award
               </h3>
-              <p className="text-xs text-center text-slate-600 font-medium">
+              <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
                 University of Dhaka Excellence Recognition
               </p>
             </div>
@@ -263,10 +263,10 @@ export default function Home() {
                   className="w-24 h-24 object-contain"
                 />
               </div>
-              <h3 className="text-center text-sm font-bold text-slate-800 mb-2 leading-tight">
+              <h3 className="text-center text-sm font-cinzel font-bold text-slate-800 mb-2 leading-tight">
                 American Political Science Association
               </h3>
-              <p className="text-xs text-center text-slate-600 font-medium">
+              <p className="text-xs text-center text-slate-600 font-space-grotesk font-medium">
                 Professional Member
               </p>
             </div>
@@ -278,8 +278,8 @@ export default function Home() {
       <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-space-grotesk font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk">
               Explore my latest publications and scholarly work.
             </p>
           </div>
@@ -298,16 +298,16 @@ export default function Home() {
                 </div>
                 <div className="max-w-xl">
                   <div className="mt-8 flex items-center gap-x-4 text-xs">
-                    <time className="text-gray-500">2024</time>
+                    <time className="text-gray-500 font-space-grotesk">2024</time>
                   </div>
                   <div className="group relative">
-                    <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <h3 className="mt-3 text-lg font-cinzel font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                       <Link href="/books">
                         <span className="absolute inset-0" />
                         Book Title {i}
                       </Link>
                     </h3>
-                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                    <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 font-space-grotesk">
                       A compelling description of your book and its main arguments or findings.
                     </p>
                   </div>
@@ -322,14 +322,14 @@ export default function Home() {
       <section className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 py-20 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-space-grotesk font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">
               Stay Updated
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk">
               Subscribe to my newsletter for updates on new publications, speaking engagements, and academic insights.
             </p>
             <div className="mt-6 flex max-w-md gap-x-4 mx-auto">
-              <label htmlFor="email-address" className="sr-only">
+              <label htmlFor="email-address" className="sr-only font-space-grotesk">
                 Email address
               </label>
               <input
@@ -338,12 +338,12 @@ export default function Home() {
                 type="email"
                 autoComplete="email"
                 required
-                className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-900 sm:text-sm sm:leading-6 font-space-grotesk"
                 placeholder="Enter your email"
               />
               <button
                 type="submit"
-                className="flex-none rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+                className="flex-none rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-cinzel font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               >
                 Subscribe
               </button>
