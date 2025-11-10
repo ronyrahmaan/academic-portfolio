@@ -302,9 +302,9 @@ export default function Home() {
       <section className="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Books</h2>
+            <h2 className="text-3xl font-cinzel font-bold tracking-tight text-gray-900 sm:text-4xl">Recent Book Chapters</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600 font-space-grotesk">
-              Explore my latest publications and scholarly work.
+              Contributions to edited volumes on governance, policy, and social issues.
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -349,7 +349,7 @@ export default function Home() {
               href="/books"
               className="inline-flex items-center px-6 py-3 border border-transparent text-base font-cinzel font-medium rounded-lg text-white bg-gradient-to-r from-green-600 to-green-500 hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
-              View All Books
+              View All Book Chapters
               <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

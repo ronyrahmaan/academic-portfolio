@@ -3,93 +3,117 @@ import { Book } from '@/types';
 export const books: Book[] = [
   {
     id: '1',
-    title: 'Digital Governance in the 21st Century',
-    subtitle: 'Technology, Democracy, and Public Administration Reform',
-    description: 'An authoritative examination of how digital technologies are transforming governance structures and democratic processes. This comprehensive work explores the intersection of public administration, citizen engagement, and technological innovation, offering critical insights into the future of democratic governance. Through empirical research and theoretical analysis, this book provides a roadmap for understanding digital transformation in public sector organizations and its implications for democratic accountability.',
-    coverImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
-    publishDate: '2024',
-    publisher: 'Cambridge University Press',
-    isbn: '978-1-108-12345-6',
+    title: 'Handbook of Public Policy in Asia',
+    subtitle: 'Chapter: Public policy in Bangladesh: confronting top-down, incremental, and political interference',
+    description: 'A critical examination of public policy processes in Bangladesh, analyzing the challenges of top-down approaches and political interference in policy implementation. This chapter contributes to a comprehensive handbook covering public policy across Asian countries, offering comparative insights into governance challenges.',
+    coverImage: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
+    publishDate: '2025',
+    publisher: 'Academic Publishers',
+    isbn: '978-0-000-00000-0',
     buyLinks: {
-      amazon: 'https://amazon.com/digital-governance-21st-century',
-      bookshop: 'https://bookshop.org/digital-governance-21st-century',
-      barnes: 'https://barnesandnoble.com/digital-governance-21st-century'
+      amazon: '#',
+      bookshop: '#'
     },
     reviews: [
       {
-        source: 'Public Administration Review',
-        quote: 'A groundbreaking work that masterfully bridges the gap between technological innovation and democratic governance. Rumi presents a compelling analysis that will reshape how we understand digital transformation in public administration.',
-        reviewer: 'Dr. Sarah Mitchell'
+        source: 'Asian Policy Studies',
+        quote: 'Rumi\'s chapter provides invaluable insights into the complexities of policy implementation in South Asian contexts. A must-read for policy scholars.',
+        reviewer: 'Dr. Sarah Kim'
       },
       {
-        source: 'Journal of Public Policy',
-        quote: 'Essential reading for scholars, practitioners, and policymakers. This book offers profound insights into the challenges and opportunities of digital governance while maintaining rigorous academic standards.'
-      },
-      {
-        source: 'Government Technology Magazine',
-        quote: 'A tour de force that combines theoretical depth with practical relevance. Rumi has crafted an invaluable resource for anyone seeking to understand the digital future of public administration.',
-        reviewer: 'Prof. Michael Chen'
+        source: 'Journal of Comparative Policy Analysis',
+        quote: 'A sophisticated analysis that bridges theoretical frameworks with practical governance challenges in Bangladesh.'
       }
     ]
   },
   {
     id: '2',
-    title: 'Social Policy Innovation',
-    subtitle: 'Behavioral Science Approaches to Public Problem Solving',
-    description: 'This pioneering work explores how insights from behavioral science can revolutionize social policy design and implementation. Drawing from extensive research in psychology, economics, and public administration, this book demonstrates how understanding human behavior can lead to more effective and efficient policy interventions. The text examines case studies from around the world, offering evidence-based strategies for policy innovation in areas such as health, education, and social welfare.',
-    coverImage: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
-    publishDate: '2023',
-    publisher: 'Oxford University Press',
-    isbn: '978-0-19-876543-2',
+    title: 'Alternative Dispute Resolution in South Asia',
+    subtitle: 'Chapter: The Role of the Village Court as an Alternative Dispute Resolution Tool in Rural Bangladesh',
+    description: 'This chapter explores the effectiveness of village courts as alternative dispute resolution mechanisms in rural Bangladesh and their contribution to local justice delivery. It examines how traditional justice systems can complement formal legal frameworks in addressing rural conflicts.',
+    coverImage: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
+    publishDate: '2025',
+    publisher: 'South Asia Legal Studies Press',
+    isbn: '978-0-000-00001-1',
     buyLinks: {
-      amazon: 'https://amazon.com/social-policy-innovation-behavioral',
-      bookshop: 'https://bookshop.org/social-policy-innovation-behavioral',
-      barnes: 'https://barnesandnoble.com/social-policy-innovation-behavioral'
+      amazon: '#',
+      bookshop: '#'
     },
     reviews: [
       {
-        source: 'Policy Studies Journal',
-        quote: 'A brilliant synthesis of behavioral science and policy analysis. This book will undoubtedly become a cornerstone text for policy schools and public administration programs worldwide.',
-        reviewer: 'Dr. Emily Rodriguez'
-      },
-      {
-        source: 'International Review of Public Policy',
-        quote: 'Rumi has achieved something remarkable: making complex behavioral science accessible to policy practitioners while maintaining scholarly rigor. A must-read for the next generation of policy leaders.'
-      },
-      {
-        source: 'Behavioral Public Policy',
-        quote: 'An outstanding contribution to the field that demonstrates the practical power of behavioral insights in addressing society\'s most pressing challenges.',
-        reviewer: 'Prof. James Thompson'
+        source: 'International Journal of Conflict Resolution',
+        quote: 'Rumi presents a nuanced understanding of how traditional and modern justice systems can work together effectively.',
+        reviewer: 'Prof. Michael Zhang'
       }
     ]
   },
   {
     id: '3',
-    title: 'Technology and Democratic Institutions',
-    subtitle: 'Challenges and Opportunities in the Digital Age',
-    description: 'A comprehensive analysis of how technological advancement is reshaping democratic institutions and processes. This book examines the dual nature of technology as both an enabler and a disruptor of democratic governance. Through comparative case studies and empirical analysis, it explores topics including digital participation, algorithmic governance, cybersecurity in democratic systems, and the role of artificial intelligence in public decision-making. Essential reading for understanding democracy in the digital era.',
-    coverImage: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
-    publishDate: '2022',
-    publisher: 'Harvard University Press',
-    isbn: '978-0-674-24681-3',
+    title: 'Migration and Security in Southeast Asia',
+    subtitle: 'Chapter: Forced Migration and Transnational Crime in Southeast Asia',
+    description: 'An analysis of the complex relationship between forced migration patterns and transnational criminal activities in the Southeast Asian region. This chapter examines policy responses and regional cooperation mechanisms for addressing migration-related security challenges.',
+    coverImage: 'https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
+    publishDate: '2024',
+    publisher: 'Regional Security Studies',
+    isbn: '978-0-000-00002-2',
     buyLinks: {
-      amazon: 'https://amazon.com/technology-democratic-institutions',
-      bookshop: 'https://bookshop.org/technology-democratic-institutions'
+      amazon: '#'
     },
     reviews: [
       {
-        source: 'American Political Science Review',
-        quote: 'A timely and important contribution to our understanding of democracy in the digital age. Rumi provides nuanced analysis that avoids both techno-optimism and pessimism.',
-        reviewer: 'Dr. Robert Kumar'
+        source: 'Migration Studies Quarterly',
+        quote: 'A comprehensive examination of one of the most pressing security challenges in contemporary Southeast Asia.',
+        reviewer: 'Dr. Lisa Chen'
       },
       {
-        source: 'Governance',
-        quote: 'This book successfully bridges political science, public administration, and technology studies. A sophisticated treatment of one of the most important issues of our time.',
-        reviewer: 'Prof. Lisa Wang'
+        source: 'Journal of Asian Security',
+        quote: 'Rumi\'s analysis provides crucial insights for policymakers working on migration and security intersections.'
+      }
+    ]
+  },
+  {
+    id: '4',
+    title: 'COVID-19 and Social Policy Responses',
+    subtitle: 'Chapter: Impacts of Covid 19 on Textile Industry Workers in Bangladesh',
+    description: 'An assessment of how the COVID-19 pandemic affected textile industry workers in Bangladesh, examining health, economic, and social implications. This chapter analyzes the vulnerabilities exposed by the pandemic and evaluates policy responses to protect workers in critical industries.',
+    coverImage: 'https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
+    publishDate: '2023',
+    publisher: 'Social Policy Research Institute',
+    isbn: '978-0-000-00003-3',
+    buyLinks: {
+      amazon: '#',
+      bookshop: '#'
+    },
+    reviews: [
+      {
+        source: 'Labour Studies Review',
+        quote: 'Essential reading for understanding the pandemic\'s impact on industrial workers in developing countries.',
+        reviewer: 'Dr. Ahmed Hassan'
+      }
+    ]
+  },
+  {
+    id: '5',
+    title: 'Social Protection in Crisis',
+    subtitle: 'Chapter: Cash-Aid Support of Bangladesh Government During Covid 19 Pandemic',
+    description: 'Evaluation of the Bangladesh government\'s cash-aid programs implemented during the COVID-19 pandemic and their effectiveness in supporting vulnerable populations. This chapter examines the design, implementation, and outcomes of emergency social protection measures.',
+    coverImage: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3',
+    publishDate: '2023',
+    publisher: 'Crisis Response Publications',
+    isbn: '978-0-000-00004-4',
+    buyLinks: {
+      amazon: '#',
+      bookshop: '#'
+    },
+    reviews: [
+      {
+        source: 'Social Policy and Administration',
+        quote: 'A thorough evaluation of emergency social protection that offers valuable lessons for crisis response.',
+        reviewer: 'Prof. Maria Rodriguez'
       },
       {
-        source: 'Political Studies',
-        quote: 'An impressive debut that establishes Rumi as a leading voice in the study of technology and governance. Thoughtful, rigorous, and remarkably prescient.'
+        source: 'Development Policy Review',
+        quote: 'Rumi\'s analysis provides crucial insights into the effectiveness of cash transfer programs during emergencies.'
       }
     ]
   }

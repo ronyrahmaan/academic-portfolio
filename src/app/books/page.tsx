@@ -11,11 +11,11 @@ export default function Books() {
           <div className="mx-auto max-w-2xl lg:mx-0">
             <div className="text-center mb-16">
               <p className="text-sm font-space-grotesk font-semibold tracking-wider uppercase text-stone-500 mb-4">Publications</p>
-              <h2 className="text-5xl sm:text-6xl font-cinzel font-bold tracking-tight text-stone-800 leading-tight">Books</h2>
+              <h2 className="text-5xl sm:text-6xl font-cinzel font-bold tracking-tight text-stone-800 leading-tight">Book Chapters</h2>
               <div className="mt-6 w-24 h-0.5 bg-gradient-to-r from-stone-300 via-stone-600 to-stone-300 mx-auto"></div>
             </div>
             <p className="mt-8 text-xl font-space-grotesk font-light leading-8 text-gray-700 text-center max-w-3xl mx-auto">
-              Scholarly works advancing the understanding of digital governance, social policy, and public administration in the contemporary era.
+              Contributions to edited volumes on public policy, governance, migration, and social protection in South Asia and beyond.
             </p>
           </div>
 
