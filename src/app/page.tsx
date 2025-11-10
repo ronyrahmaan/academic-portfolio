@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-slate-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0 items-center min-h-screen">
 
@@ -62,9 +62,9 @@ export default function Home() {
                 </div>
 
                 {/* Premium decorative elements */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-amber-400/20 to-orange-500/20 rounded-3xl blur-xl -z-10"></div>
-                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-yellow-400/30 to-amber-400/30 rounded-full blur-2xl"></div>
-                <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-gradient-to-br from-orange-400/30 to-red-500/30 rounded-full blur-2xl"></div>
+                <div className="absolute -inset-4 bg-blue-500/10 rounded-3xl blur-xl -z-10"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-400/20 rounded-full blur-2xl"></div>
+                <div className="absolute -bottom-8 -right-8 w-24 h-24 bg-indigo-400/20 rounded-full blur-2xl"></div>
               </div>
             </div>
 
