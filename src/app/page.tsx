@@ -214,7 +214,7 @@ export default function Home() {
           <div className="relative w-full overflow-hidden">
             <div className="flex animate-scroll-left">
               {/* First set of accolades */}
-              <div className="flex space-x-56 min-w-full pl-8">
+              <div className="flex space-x-56 pl-8">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[480px] max-w-[480px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
@@ -353,7 +353,7 @@ export default function Home() {
                 </div>
 
                 {/* Second set of accolades (duplicate for seamless loop) */}
-                <div className="flex space-x-56 min-w-full pl-8">
+                <div className="flex space-x-56 ml-56">
                   {/* Award 1 - Texas Tech Fellowship */}
                   <div className="flex flex-col items-center group min-w-[480px] max-w-[480px]">
                     <div className="mb-6 group-hover:scale-105 transition-all duration-300">
