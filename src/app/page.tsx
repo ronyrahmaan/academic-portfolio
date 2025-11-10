@@ -16,35 +16,57 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-0 items-center min-h-screen">
 
             {/* Left side - Content */}
-            <div className="py-20 space-y-8 pr-8">
+            <div className="py-20 space-y-10 pr-8">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-cinzel font-bold leading-[0.9] text-gray-900 tracking-tight">
-                Maruf Hasan Rumi
+                Dr. Maruf Hasan Rumi
               </h1>
 
-              <div className="space-y-6 text-gray-800">
-                <div className="space-y-3">
-                  <p className="text-xl font-space-grotesk font-light leading-relaxed">
-                    Assistant Professor of Public Administration and
+              <div className="space-y-8 text-gray-800">
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-space-grotesk font-light leading-relaxed text-gray-700">
+                    Visionary Scholar & Distinguished Academic Leader
+                  </h2>
+                  <div className="space-y-2">
+                    <p className="text-lg font-space-grotesk font-light leading-relaxed">
+                      Assistant Professor of Public Administration
+                    </p>
+                    <p className="text-lg font-space-grotesk font-light leading-relaxed">
+                      Doctoral Candidate in Political Science
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="h-px bg-gradient-to-r from-gray-400 to-transparent w-12"></div>
+                  <p className="text-lg font-space-grotesk font-medium text-gray-600 whitespace-nowrap">
+                    University of Dhaka • Texas Tech University
                   </p>
-                  <p className="text-xl font-space-grotesk font-light leading-relaxed">
-                    PhD Student in Political Science
+                  <div className="h-px bg-gradient-to-l from-gray-400 to-transparent w-12"></div>
+                </div>
+
+                <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-gray-400">
+                  <p className="text-lg font-space-grotesk font-light leading-relaxed text-gray-700">
+                    <span className="font-medium">Pioneering research</span> at the intersection of
+                    <span className="text-gray-900 font-medium">Digital Governance</span>,
+                    <span className="text-gray-900 font-medium">Social Policy Innovation</span>,
+                    <span className="text-gray-900 font-medium">Technology Integration</span>, and
+                    <span className="text-gray-900 font-medium">Behavioral Science</span> —
+                    shaping the future of democratic institutions and public administration.
                   </p>
                 </div>
 
-                <p className="text-lg font-space-grotesk font-light text-gray-600">
-                  University of Dhaka • Texas Tech University
-                </p>
-
-                <div className="pt-3">
-                  <p className="text-lg font-space-grotesk font-light leading-relaxed">
-                    Specializing in Digital Governance, Social Policy, Technology, and Behavioral Science
-                  </p>
-                </div>
-
-                <div className="pt-6 border-t border-gray-300">
-                  <p className="text-base font-space-grotesk font-medium text-gray-700">
-                    J.T. and Margaret Talkington Graduate Fellow
-                  </p>
+                <div className="pt-4 border-t border-gray-200">
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-5 border border-blue-100">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                      <p className="text-base font-space-grotesk font-semibold text-gray-800">
+                        J.T. and Margaret Talkington Graduate Fellow
+                      </p>
+                    </div>
+                    <p className="text-sm font-space-grotesk font-light text-gray-600 mt-2 ml-6">
+                      Distinguished Fellowship • Texas Tech University
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
