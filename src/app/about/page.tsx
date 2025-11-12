@@ -5,16 +5,22 @@ export default function About() {
   return (
     <Layout>
       <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-4xl text-base leading-7 text-gray-700">
-          <p className="text-base font-space-grotesk font-medium leading-7 text-gray-600">About</p>
-          <h1 className="mt-4 text-4xl font-cinzel font-light tracking-tight text-gray-900 sm:text-5xl">
-            Maruf Hasan Rumi
-          </h1>
-          <p className="mt-6 text-xl leading-8 font-space-grotesk">
-            Assistant Professor of Public Administration at University of Dhaka and PhD Student in Political Science at Texas Tech University, specializing in digital governance, social policy, technology, and behavioral science.
-          </p>
+        <div className="mx-auto max-w-6xl text-base leading-7 text-gray-700">
+          {/* Header Section */}
+          <div className="text-center mb-16">
+            <p className="text-base font-space-grotesk font-medium leading-7 text-gray-600">About</p>
+            <h1 className="mt-4 text-4xl font-cinzel font-light tracking-tight text-gray-900 sm:text-5xl">
+              Maruf Hasan Rumi
+            </h1>
+            <p className="mt-6 text-xl leading-8 font-space-grotesk max-w-4xl mx-auto">
+              Assistant Professor of Public Administration at University of Dhaka and PhD Student in Political Science at Texas Tech University, specializing in digital governance, social policy, technology, and behavioral science.
+            </p>
+          </div>
 
-          <div className="mt-10 max-w-2xl">
+          {/* Two-Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            {/* Main Content - Left Column */}
+            <div className="lg:col-span-2 space-y-8">
             <p className="font-space-grotesk">
               Dr. Maruf Hasan Rumi stands at the intersection of traditional governance and digital innovation,
               bridging the worlds of public administration and political science with pioneering research that
@@ -41,8 +47,8 @@ export default function About() {
               consultation, media commentary, and public discourse on governance and social policy issues.
             </p>
 
-            <div className="mt-16">
-              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Research Interests</h2>
+                <div>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Research Interests</h2>
               <ul role="list" className="mt-8 max-w-xl space-y-6 text-gray-600 font-space-grotesk">
                 <li className="flex items-start gap-x-4">
                   <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600">
@@ -85,10 +91,10 @@ export default function About() {
                   <span><strong>Crisis Response and Social Protection:</strong> Evaluating emergency social protection measures, cash transfer programs, and labor market interventions during crises</span>
                 </li>
               </ul>
-            </div>
+              </div>
 
-            <div className="mt-16">
-              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Education</h2>
+              <div>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Education</h2>
               <div className="mt-8 space-y-8">
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
                   <h3 className="text-lg font-cinzel font-semibold text-gray-900">Ph.D. in Political Science</h3>
@@ -142,27 +148,71 @@ export default function About() {
                   </ul>
                 </div>
               </div>
+              </div>
+            </div>
+
+            {/* Right Sidebar */}
+            <div className="lg:col-span-1">
+              {/* Profile Image */}
+              <div className="sticky top-8">
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-8">
+                  <Image
+                    className="rounded-lg object-cover w-full"
+                    src="/Rumi, Maruf Hasan (Headshot 1).jpg"
+                    alt="Dr. Maruf Hasan Rumi"
+                    width={400}
+                    height={480}
+                  />
+                </div>
+
+                {/* Quick Stats */}
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-8">
+                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Quick Stats</h3>
+                  <div className="space-y-4">
+                    <div className="text-center">
+                      <div className="text-2xl font-cinzel font-bold text-blue-600">20+</div>
+                      <div className="text-sm text-gray-600 font-space-grotesk">Publications</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-cinzel font-bold text-green-600">5+</div>
+                      <div className="text-sm text-gray-600 font-space-grotesk">Years Teaching</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-cinzel font-bold text-purple-600">8+</div>
+                      <div className="text-sm text-gray-600 font-space-grotesk">Awards</div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Contact</h3>
+                  <div className="space-y-3 text-sm font-space-grotesk">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">maruf.rumi@du.ac.bd</span>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span className="text-gray-700">University of Dhaka</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <figure className="mt-16">
-            <div className="flex justify-center">
-              <Image
-                className="rounded-xl bg-gray-50 object-cover shadow-xl w-full max-w-lg"
-                src="/Rumi, Maruf Hasan (Headshot 1).jpg"
-                alt="Dr. Maruf Hasan Rumi in academic setting"
-                width={500}
-                height={600}
-              />
-            </div>
-            <figcaption className="mt-4 text-center text-sm leading-6 text-gray-500 font-space-grotesk">
-              <span>Dr. Rumi's commitment to bridging academic research with real-world policy impact,
-              exemplifying the intersection of digital innovation and traditional governance.</span>
-            </figcaption>
-          </figure>
-
-          <div className="mt-16 max-w-2xl">
-            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Awards and Recognition</h2>
+          <div className="mt-16">
+            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 text-center">Awards and Recognition</h2>
             <div className="mt-8">
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-100">
