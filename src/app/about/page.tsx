@@ -425,35 +425,35 @@ export default function About() {
           <div className="mt-16">
             <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 text-center">Awards and Recognition</h2>
             <div className="mt-8">
-              <div className="grid gap-4 md:grid-cols-2">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-blue-100">
-                  <strong className="text-blue-800 font-cinzel">J.T. and Margaret Talkington Graduate Fellowship</strong>
-                  <p className="text-sm text-blue-700 font-space-grotesk mt-1">(2025) - Texas Tech University</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-1">Distinguished fellowship for doctoral excellence</p>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 min-h-[140px] flex flex-col">
+                  <strong className="text-blue-800 font-cinzel text-base leading-tight">J.T. and Margaret Talkington Graduate Fellowship</strong>
+                  <p className="text-sm text-blue-700 font-space-grotesk mt-2">(2025) - Texas Tech University</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Distinguished fellowship for doctoral excellence</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-lg p-4 border border-red-100">
-                  <strong className="text-red-800 font-cinzel">American Red Cross Research Grant</strong>
-                  <p className="text-sm text-red-700 font-space-grotesk mt-1">(2024) - Research Excellence Award</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-1">For innovative social policy research</p>
+                <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-100 min-h-[140px] flex flex-col">
+                  <strong className="text-red-800 font-cinzel text-base leading-tight">American Red Cross Research Grant</strong>
+                  <p className="text-sm text-red-700 font-space-grotesk mt-2">(2024) - Research Excellence Award</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">For innovative social policy research</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-4 border border-green-100">
-                  <strong className="text-green-800 font-cinzel">UGC-Dhaka University Research Fellowship</strong>
-                  <p className="text-sm text-green-700 font-space-grotesk mt-1">(2023) - University Grants Commission</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-1">Supporting digital governance research</p>
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100 min-h-[140px] flex flex-col">
+                  <strong className="text-green-800 font-cinzel text-base leading-tight">UGC-Dhaka University Research Fellowship</strong>
+                  <p className="text-sm text-green-700 font-space-grotesk mt-2">(2023) - University Grants Commission</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Supporting digital governance research</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-lg p-4 border border-purple-100">
-                  <strong className="text-purple-800 font-cinzel">Dean's Award for Academic Excellence</strong>
-                  <p className="text-sm text-purple-700 font-space-grotesk mt-1">(2023) - University of Dhaka</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-1">Recognition of scholarly achievements</p>
+                <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 border border-purple-100 min-h-[140px] flex flex-col">
+                  <strong className="text-purple-800 font-cinzel text-base leading-tight">Dean's Award for Academic Excellence</strong>
+                  <p className="text-sm text-purple-700 font-space-grotesk mt-2">(2023) - University of Dhaka</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Recognition of scholarly achievements</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-lg p-4 border border-orange-100 md:col-span-2">
-                  <strong className="text-orange-800 font-cinzel">Bangladesh Bureau of Educational Information and Statistics Fellowship</strong>
-                  <p className="text-sm text-orange-700 font-space-grotesk mt-1">(2024) - Ministry of Education, Bangladesh</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-1">Supporting research in educational policy and administration</p>
+                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100 md:col-span-2 min-h-[140px] flex flex-col">
+                  <strong className="text-orange-800 font-cinzel text-base leading-tight">Bangladesh Bureau of Educational Information and Statistics Fellowship</strong>
+                  <p className="text-sm text-orange-700 font-space-grotesk mt-2">(2024) - Ministry of Education, Bangladesh</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Supporting research in educational policy and administration</p>
                 </div>
               </div>
             </div>
