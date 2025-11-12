@@ -4,7 +4,7 @@ import Layout from "@/components/Layout";
 export default function About() {
   return (
     <Layout>
-      <div className="bg-white px-6 py-20 lg:px-8">
+      <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-20 lg:px-8">
         <div className="mx-auto max-w-4xl text-base leading-7 text-gray-700">
           <p className="text-base font-space-grotesk font-medium leading-7 text-gray-600">About</p>
           <h1 className="mt-4 text-4xl font-cinzel font-light tracking-tight text-gray-900 sm:text-5xl">

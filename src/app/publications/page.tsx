@@ -36,7 +36,7 @@ export default function Publications() {
 
   return (
     <Layout>
-      <div className="bg-white py-20 sm:py-32">
+      <div className="bg-gradient-to-b from-gray-50 to-white py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-16">

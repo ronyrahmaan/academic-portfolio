@@ -6,7 +6,7 @@ import { books } from "@/data/books";
 export default function Books() {
   return (
     <Layout>
-      <div className="bg-white py-20 sm:py-32">
+      <div className="bg-gradient-to-b from-gray-50 to-white py-20 sm:py-32">
         <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <div className="text-center mb-16">
