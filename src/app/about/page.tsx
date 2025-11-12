@@ -18,9 +18,9 @@ export default function About() {
           </div>
 
           {/* Two-Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
             {/* Main Content - Left Column */}
-            <div className="lg:col-span-2 space-y-8">
+            <div className="lg:col-span-4 space-y-8">
             <p className="font-space-grotesk">
               Dr. Maruf Hasan Rumi stands at the intersection of traditional governance and digital innovation,
               bridging the worlds of public administration and political science with pioneering research that
@@ -355,7 +355,7 @@ export default function About() {
             <div className="lg:col-span-1">
               {/* Profile Image */}
               <div className="sticky top-8">
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-8">
+                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 mb-6">
                   <Image
                     className="rounded-lg object-cover w-full"
                     src="/Rumi, Maruf Hasan (Headshot 1).jpg"
@@ -370,9 +370,9 @@ export default function About() {
                 </div>
 
                 {/* Current Research Focus */}
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-8">
-                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Current Research Focus</h3>
-                  <div className="space-y-3">
+                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 mb-6">
+                  <h3 className="text-base font-cinzel font-bold text-gray-900 mb-3">Current Research Focus</h3>
+                  <div className="space-y-2">
                     <div className="flex items-start space-x-3">
                       <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                         <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
@@ -401,9 +401,9 @@ export default function About() {
                 </div>
 
                 {/* Active Research Projects */}
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Active Projects</h3>
-                  <div className="space-y-4">
+                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100">
+                  <h3 className="text-base font-cinzel font-bold text-gray-900 mb-3">Active Projects</h3>
+                  <div className="space-y-3">
                     <div className="border-l-4 border-blue-500 pl-4">
                       <h4 className="text-sm font-semibold text-gray-900 font-space-grotesk">PhD Dissertation</h4>
                       <p className="text-xs text-gray-600 font-space-grotesk">"Digital Governance and Citizen Engagement in Contemporary Democracies"</p>
