@@ -4,10 +4,10 @@ import Layout from "@/components/Layout";
 export default function About() {
   return (
     <Layout>
-      <div className="bg-gradient-to-b from-gray-50 to-white px-6 py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl text-base leading-7 text-gray-700">
+      <div className="bg-gradient-to-b from-gray-50 to-white px-4 sm:px-6 py-16 lg:px-8 lg:py-20">
+        <div className="mx-auto max-w-4xl text-base leading-7 text-gray-700">
           {/* Header Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 lg:mb-16">
             <p className="text-base font-space-grotesk font-medium leading-7 text-gray-600">About</p>
             <h1 className="mt-4 text-4xl font-cinzel font-light tracking-tight text-gray-900 sm:text-5xl">
               Maruf Hasan Rumi
@@ -18,9 +18,9 @@ export default function About() {
           </div>
 
           {/* Two-Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Main Content - Left Column */}
-            <div className="lg:col-span-4 space-y-8">
+            <div className="lg:col-span-2 space-y-8">
             <p className="font-space-grotesk">
               Dr. Maruf Hasan Rumi stands at the intersection of traditional governance and digital innovation,
               bridging the worlds of public administration and political science with pioneering research that
@@ -48,7 +48,7 @@ export default function About() {
             </p>
 
               {/* Research Philosophy & Methodology */}
-              <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-100">
+              <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-6 lg:p-8 border border-slate-100">
                 <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-6">Research Philosophy & Methodology</h2>
                 <div className="space-y-6">
                   <p className="font-space-grotesk text-gray-700 leading-relaxed">
@@ -174,8 +174,8 @@ export default function About() {
               </div>
             </div>
 
-            <div className="mt-16">
-              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Current Positions & Responsibilities</h2>
+            <div className="mt-12 lg:mt-16">
+              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-6 lg:mb-8">Current Positions & Responsibilities</h2>
               <div className="mt-8 space-y-6">
                 <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-100">
                   <h3 className="text-lg font-cinzel font-semibold text-gray-900">Assistant Professor</h3>
@@ -354,15 +354,17 @@ export default function About() {
             {/* Right Sidebar */}
             <div className="lg:col-span-1">
               {/* Profile Image */}
-              <div className="sticky top-8 space-y-6">
+              <div className="sticky top-6 lg:top-8 space-y-6">
                 <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-                  <Image
-                    className="rounded-lg object-cover w-full"
-                    src="/Rumi, Maruf Hasan (Headshot 1).jpg"
-                    alt="Dr. Maruf Hasan Rumi"
-                    width={240}
-                    height={300}
-                  />
+                  <div className="w-full max-w-xs mx-auto">
+                    <Image
+                      className="rounded-lg object-cover w-full h-auto aspect-[4/5]"
+                      src="/Rumi, Maruf Hasan (Headshot 1).jpg"
+                      alt="Dr. Maruf Hasan Rumi"
+                      width={240}
+                      height={300}
+                    />
+                  </div>
                   <figcaption className="mt-4 text-center text-sm leading-6 text-gray-600 font-space-grotesk italic">
                     Dr. Rumi's commitment to bridging academic research with real-world policy impact,
                     exemplifying the intersection of digital innovation and traditional governance.
@@ -422,8 +424,8 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-16">
-            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Awards and Recognition</h2>
+          <div className="mt-12 lg:mt-16">
+            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-6 lg:mb-8">Awards and Recognition</h2>
             <div>
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 min-h-[160px] flex flex-col">
