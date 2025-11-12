@@ -107,7 +107,7 @@ export default function About() {
               </div>
 
                 <div>
-                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Research Interests</h2>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Research Interests</h2>
               <ul role="list" className="mt-8 max-w-xl space-y-6 text-gray-600 font-space-grotesk">
                 <li className="flex items-start gap-x-4">
                   <div className="mt-0.5 h-5 w-5 flex-shrink-0 text-blue-600">
@@ -153,7 +153,7 @@ export default function About() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Education</h2>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Education</h2>
               <div className="mt-8 space-y-8">
                 <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
                   <h3 className="text-lg font-cinzel font-semibold text-gray-900">Ph.D. in Political Science</h3>
@@ -175,7 +175,7 @@ export default function About() {
             </div>
 
             <div className="mt-16">
-              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Current Positions & Responsibilities</h2>
+              <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Current Positions & Responsibilities</h2>
               <div className="mt-8 space-y-6">
                 <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-100">
                   <h3 className="text-lg font-cinzel font-semibold text-gray-900">Assistant Professor</h3>
@@ -210,7 +210,7 @@ export default function About() {
 
               {/* Policy Impact & Real-World Applications */}
               <div>
-                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Policy Impact & Real-World Applications</h2>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Policy Impact & Real-World Applications</h2>
                 <div className="mt-8 space-y-6">
                   <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-6 border border-emerald-100">
                     <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Government Consultation & Advisory</h3>
@@ -294,7 +294,7 @@ export default function About() {
 
               {/* Teaching & Mentorship */}
               <div>
-                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Teaching & Mentorship</h2>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Teaching & Mentorship</h2>
                 <div className="mt-8 space-y-6">
                   <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
                     <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Educational Philosophy</h3>
@@ -354,14 +354,14 @@ export default function About() {
             {/* Right Sidebar */}
             <div className="lg:col-span-1">
               {/* Profile Image */}
-              <div className="sticky top-8">
-                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 mb-6">
+              <div className="sticky top-8 space-y-6">
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
                   <Image
                     className="rounded-lg object-cover w-full"
                     src="/Rumi, Maruf Hasan (Headshot 1).jpg"
                     alt="Dr. Maruf Hasan Rumi"
-                    width={400}
-                    height={480}
+                    width={240}
+                    height={300}
                   />
                   <figcaption className="mt-4 text-center text-sm leading-6 text-gray-600 font-space-grotesk italic">
                     Dr. Rumi's commitment to bridging academic research with real-world policy impact,
@@ -370,7 +370,7 @@ export default function About() {
                 </div>
 
                 {/* Current Research Focus */}
-                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100 mb-6">
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
                   <h3 className="text-base font-cinzel font-bold text-gray-900 mb-3">Current Research Focus</h3>
                   <div className="space-y-2">
                     <div className="flex items-start space-x-3">
@@ -401,7 +401,7 @@ export default function About() {
                 </div>
 
                 {/* Active Research Projects */}
-                <div className="bg-white rounded-xl p-4 shadow-lg border border-gray-100">
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
                   <h3 className="text-base font-cinzel font-bold text-gray-900 mb-3">Active Projects</h3>
                   <div className="space-y-3">
                     <div className="border-l-4 border-blue-500 pl-4">
@@ -422,38 +422,38 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-20">
-            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 text-center">Awards and Recognition</h2>
-            <div className="mt-10">
+          <div className="mt-16">
+            <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-8">Awards and Recognition</h2>
+            <div>
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 min-h-[140px] flex flex-col">
-                  <strong className="text-blue-800 font-cinzel text-base leading-tight">J.T. and Margaret Talkington Graduate Fellowship</strong>
-                  <p className="text-sm text-blue-700 font-space-grotesk mt-2">(2025) - Texas Tech University</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Distinguished fellowship for doctoral excellence</p>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 min-h-[160px] flex flex-col">
+                  <strong className="text-blue-800 font-cinzel text-sm leading-snug mb-2">J.T. and Margaret Talkington Graduate Fellowship</strong>
+                  <p className="text-xs text-blue-700 font-space-grotesk mb-2">(2025) - Texas Tech University</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk flex-grow">Distinguished fellowship for doctoral excellence</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-100 min-h-[140px] flex flex-col">
-                  <strong className="text-red-800 font-cinzel text-base leading-tight">American Red Cross Research Grant</strong>
-                  <p className="text-sm text-red-700 font-space-grotesk mt-2">(2024) - Research Excellence Award</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">For innovative social policy research</p>
+                <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-xl p-6 border border-red-100 min-h-[160px] flex flex-col">
+                  <strong className="text-red-800 font-cinzel text-sm leading-snug mb-2">American Red Cross Research Grant</strong>
+                  <p className="text-xs text-red-700 font-space-grotesk mb-2">(2024) - Research Excellence Award</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk flex-grow">For innovative social policy research</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100 min-h-[140px] flex flex-col">
-                  <strong className="text-green-800 font-cinzel text-base leading-tight">UGC-Dhaka University Research Fellowship</strong>
-                  <p className="text-sm text-green-700 font-space-grotesk mt-2">(2023) - University Grants Commission</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Supporting digital governance research</p>
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100 min-h-[160px] flex flex-col">
+                  <strong className="text-green-800 font-cinzel text-sm leading-snug mb-2">UGC-Dhaka University Research Fellowship</strong>
+                  <p className="text-xs text-green-700 font-space-grotesk mb-2">(2023) - University Grants Commission</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk flex-grow">Supporting digital governance research</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 border border-purple-100 min-h-[140px] flex flex-col">
-                  <strong className="text-purple-800 font-cinzel text-base leading-tight">Dean's Award for Academic Excellence</strong>
-                  <p className="text-sm text-purple-700 font-space-grotesk mt-2">(2023) - University of Dhaka</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Recognition of scholarly achievements</p>
+                <div className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-xl p-6 border border-purple-100 min-h-[160px] flex flex-col">
+                  <strong className="text-purple-800 font-cinzel text-sm leading-snug mb-2">Dean's Award for Academic Excellence</strong>
+                  <p className="text-xs text-purple-700 font-space-grotesk mb-2">(2023) - University of Dhaka</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk flex-grow">Recognition of scholarly achievements</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100 md:col-span-2 min-h-[140px] flex flex-col">
-                  <strong className="text-orange-800 font-cinzel text-base leading-tight">Bangladesh Bureau of Educational Information and Statistics Fellowship</strong>
-                  <p className="text-sm text-orange-700 font-space-grotesk mt-2">(2024) - Ministry of Education, Bangladesh</p>
-                  <p className="text-xs text-gray-600 font-space-grotesk mt-2 flex-grow">Supporting research in educational policy and administration</p>
+                <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100 md:col-span-2 min-h-[160px] flex flex-col">
+                  <strong className="text-orange-800 font-cinzel text-sm leading-snug mb-2">Bangladesh Bureau of Educational Information and Statistics Fellowship</strong>
+                  <p className="text-xs text-orange-700 font-space-grotesk mb-2">(2024) - Ministry of Education, Bangladesh</p>
+                  <p className="text-xs text-gray-600 font-space-grotesk flex-grow">Supporting research in educational policy and administration</p>
                 </div>
               </div>
             </div>
