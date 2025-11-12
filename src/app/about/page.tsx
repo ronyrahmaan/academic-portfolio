@@ -422,10 +422,10 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mt-16">
+          <div className="mt-20">
             <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 text-center">Awards and Recognition</h2>
-            <div className="mt-8">
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+            <div className="mt-10">
+              <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
                 <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100 min-h-[140px] flex flex-col">
                   <strong className="text-blue-800 font-cinzel text-base leading-tight">J.T. and Margaret Talkington Graduate Fellowship</strong>
                   <p className="text-sm text-blue-700 font-space-grotesk mt-2">(2025) - Texas Tech University</p>
