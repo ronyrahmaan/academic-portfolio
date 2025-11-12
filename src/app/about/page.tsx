@@ -47,6 +47,65 @@ export default function About() {
               consultation, media commentary, and public discourse on governance and social policy issues.
             </p>
 
+              {/* Research Philosophy & Methodology */}
+              <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-8 border border-slate-100">
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-6">Research Philosophy & Methodology</h2>
+                <div className="space-y-6">
+                  <p className="font-space-grotesk text-gray-700 leading-relaxed">
+                    Dr. Rumi's research philosophy centers on the transformative potential of technology-enabled governance
+                    to strengthen democratic institutions and enhance citizen participation. He advocates for a
+                    <strong className="text-slate-800"> mixed-methods approach</strong> that bridges quantitative rigor
+                    with qualitative depth, ensuring research findings are both statistically robust and contextually meaningful.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-3">
+                      <h3 className="text-lg font-cinzel font-semibold text-gray-900">Methodological Approach</h3>
+                      <ul className="space-y-2 text-sm font-space-grotesk text-gray-700">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Cross-sectional and longitudinal survey designs</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>In-depth interviews with policy stakeholders</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Comparative policy analysis across jurisdictions</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Digital ethnography of citizen engagement platforms</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="space-y-3">
+                      <h3 className="text-lg font-cinzel font-semibold text-gray-900">Theoretical Framework</h3>
+                      <ul className="space-y-2 text-sm font-space-grotesk text-gray-700">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>New Public Management and Digital Era Governance</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Behavioral insights in public policy design</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Institutional theory and democratic innovation</span>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <span>Gender-responsive governance frameworks</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
                 <div>
                 <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Research Interests</h2>
               <ul role="list" className="mt-8 max-w-xl space-y-6 text-gray-600 font-space-grotesk">
@@ -148,6 +207,147 @@ export default function About() {
                   </ul>
                 </div>
               </div>
+
+              {/* Policy Impact & Real-World Applications */}
+              <div>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Policy Impact & Real-World Applications</h2>
+                <div className="mt-8 space-y-6">
+                  <div className="bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl p-6 border border-emerald-100">
+                    <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Government Consultation & Advisory</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 font-space-grotesk">Digital Bangladesh Initiative</h4>
+                          <p className="text-sm text-gray-700 font-space-grotesk">Policy advisor for e-governance implementation across rural districts, contributing to national digital transformation strategy</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-4">
+                        <div className="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 font-space-grotesk">COVID-19 Social Protection Response</h4>
+                          <p className="text-sm text-gray-700 font-space-grotesk">Research findings informed emergency cash transfer program design, reaching over 2 million vulnerable households</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+                    <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">International Organizations</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 font-space-grotesk">World Bank Technical Assistance</h4>
+                          <p className="text-sm text-gray-700 font-space-grotesk">Contributed to governance assessment frameworks for digital public service delivery in South Asia</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start space-x-4">
+                        <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-gray-900 font-space-grotesk">UNDP Policy Research</h4>
+                          <p className="text-sm text-gray-700 font-space-grotesk">Research on gender-responsive governance fed into regional sustainable development goal implementation strategies</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
+                    <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Media & Expert Commentary</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm font-space-grotesk">
+                      <div>
+                        <h4 className="font-semibold text-gray-900">Print Media</h4>
+                        <ul className="mt-2 space-y-1 text-gray-700">
+                          <li>• The Daily Star (Op-Ed contributor)</li>
+                          <li>• Dhaka Tribune (Policy analysis)</li>
+                          <li>• New Age Bangladesh (Expert interviews)</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-gray-900">Broadcasting</h4>
+                        <ul className="mt-2 space-y-1 text-gray-700">
+                          <li>• BTV Talk Show (Governance expert)</li>
+                          <li>• Channel i (Digital policy commentary)</li>
+                          <li>• Radio Today (Public administration)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Teaching & Mentorship */}
+              <div>
+                <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900">Teaching & Mentorship</h2>
+                <div className="mt-8 space-y-6">
+                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
+                    <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Educational Philosophy</h3>
+                    <p className="font-space-grotesk text-gray-700 leading-relaxed">
+                      Dr. Rumi believes in <strong>experiential learning</strong> that bridges theoretical knowledge with practical application.
+                      His pedagogical approach emphasizes critical thinking, collaborative problem-solving, and real-world policy analysis.
+                      Students are encouraged to engage with contemporary governance challenges through case studies, simulations, and
+                      direct interaction with policy practitioners.
+                    </p>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-xl p-6 border border-teal-100">
+                      <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Courses Taught</h3>
+                      <ul className="space-y-2 text-sm font-space-grotesk text-gray-700">
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                          <span>Digital Governance & E-Administration</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                          <span>Public Policy Analysis</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                          <span>Research Methods in Public Administration</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-teal-500 rounded-full"></div>
+                          <span>Comparative Government & Politics</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-6 border border-indigo-100">
+                      <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Student Mentorship</h3>
+                      <div className="space-y-4">
+                        <div className="text-center">
+                          <div className="text-2xl font-cinzel font-bold text-indigo-600">15+</div>
+                          <div className="text-sm text-gray-600 font-space-grotesk">Master's thesis supervised</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-cinzel font-bold text-indigo-600">40+</div>
+                          <div className="text-sm text-gray-600 font-space-grotesk">Undergraduate researchers</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-cinzel font-bold text-indigo-600">5</div>
+                          <div className="text-sm text-gray-600 font-space-grotesk">Students in PhD programs</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -163,47 +363,58 @@ export default function About() {
                     width={400}
                     height={480}
                   />
+                  <figcaption className="mt-4 text-center text-sm leading-6 text-gray-600 font-space-grotesk italic">
+                    Dr. Rumi's commitment to bridging academic research with real-world policy impact,
+                    exemplifying the intersection of digital innovation and traditional governance.
+                  </figcaption>
                 </div>
 
-                {/* Quick Stats */}
+                {/* Current Research Focus */}
                 <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100 mb-8">
-                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Quick Stats</h3>
-                  <div className="space-y-4">
-                    <div className="text-center">
-                      <div className="text-2xl font-cinzel font-bold text-blue-600">20+</div>
-                      <div className="text-sm text-gray-600 font-space-grotesk">Publications</div>
+                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Current Research Focus</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-gray-700 font-space-grotesk">Digital Governance in Democratic Contexts</span>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-cinzel font-bold text-green-600">5+</div>
-                      <div className="text-sm text-gray-600 font-space-grotesk">Years Teaching</div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-3 h-3 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-gray-700 font-space-grotesk">Citizen Engagement Technologies</span>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-cinzel font-bold text-purple-600">8+</div>
-                      <div className="text-sm text-gray-600 font-space-grotesk">Awards</div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-3 h-3 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <span className="text-sm text-gray-700 font-space-grotesk">Public Trust & Institutional Effectiveness</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Contact Info */}
+                {/* Active Research Projects */}
                 <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Contact</h3>
-                  <div className="space-y-3 text-sm font-space-grotesk">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-700">maruf.rumi@du.ac.bd</span>
+                  <h3 className="text-lg font-cinzel font-bold text-gray-900 mb-4">Active Projects</h3>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-blue-500 pl-4">
+                      <h4 className="text-sm font-semibold text-gray-900 font-space-grotesk">PhD Dissertation</h4>
+                      <p className="text-xs text-gray-600 font-space-grotesk">"Digital Governance and Citizen Engagement in Contemporary Democracies"</p>
                     </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <span className="text-gray-700">University of Dhaka</span>
+                    <div className="border-l-4 border-green-500 pl-4">
+                      <h4 className="text-sm font-semibold text-gray-900 font-space-grotesk">Policy Research</h4>
+                      <p className="text-xs text-gray-600 font-space-grotesk">Emergency social protection measures in crisis response</p>
+                    </div>
+                    <div className="border-l-4 border-purple-500 pl-4">
+                      <h4 className="text-sm font-semibold text-gray-900 font-space-grotesk">Cross-national Study</h4>
+                      <p className="text-xs text-gray-600 font-space-grotesk">Digital health technologies and gender equity</p>
                     </div>
                   </div>
                 </div>
@@ -248,6 +459,7 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </Layout>
   );
