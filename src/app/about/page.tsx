@@ -14,7 +14,7 @@ export default function About() {
                   <Image
                     className="rounded-xl object-cover w-full h-full shadow-lg"
                     src="/Rumi, Maruf Hasan (Headshot 1).jpg"
-                    alt="Dr. Maruf Hasan Rumi"
+                    alt="Maruf Hasan Rumi"
                     width={224}
                     height={224}
                   />
@@ -35,7 +35,7 @@ export default function About() {
           {/* Main Content - Single Column Layout */}
           <div className="max-w-4xl mx-auto space-y-8">
             <p className="font-space-grotesk">
-              Dr. Maruf Hasan Rumi stands at the intersection of traditional governance and digital innovation,
+              Maruf Hasan Rumi stands at the intersection of traditional governance and digital innovation,
               bridging the worlds of public administration and political science with pioneering research that
               shapes our understanding of democratic institutions in the digital age. As an Assistant Professor
               at the University of Dhaka's Department of Public Administration and a doctoral candidate at
@@ -48,7 +48,7 @@ export default function About() {
               cross-sectional surveys, in-depth interviews, and comparative policy analysis to examine the
               complex relationships between technology, governance, and citizen engagement. With over 20
               peer-reviewed publications and contributions to leading academic journals including Frontiers
-              in Sociology, PLOS Digital Health, and Policing: A Journal of Policy and Practice, Dr. Rumi's
+              in Sociology, PLOS Digital Health, and Policing: A Journal of Policy and Practice, Rumi's
               work has garnered international recognition and significant scholarly impact.
             </p>
 
@@ -56,7 +56,7 @@ export default function About() {
               His scholarly excellence has been recognized through prestigious fellowships including the J.T.
               and Margaret Talkington Graduate Fellowship at Texas Tech University, the American Red Cross
               Research Grant (2024), and multiple research fellowships from the University Grants Commission
-              of Bangladesh. Dr. Rumi's work extends beyond academia through active engagement in policy
+              of Bangladesh. Rumi's work extends beyond academia through active engagement in policy
               consultation, media commentary, and public discourse on governance and social policy issues.
             </p>
 
@@ -65,7 +65,7 @@ export default function About() {
                 <h2 className="text-2xl font-cinzel font-bold tracking-tight text-gray-900 mb-6">Research Philosophy & Methodology</h2>
                 <div className="space-y-6">
                   <p className="font-space-grotesk text-gray-700 leading-relaxed">
-                    Dr. Rumi's research philosophy centers on the transformative potential of technology-enabled governance
+                    Rumi's research philosophy centers on the transformative potential of technology-enabled governance
                     to strengthen democratic institutions and enhance citizen participation. He advocates for a
                     <strong className="text-slate-800"> mixed-methods approach</strong> that bridges quantitative rigor
                     with qualitative depth, ensuring research findings are both statistically robust and contextually meaningful.
@@ -312,7 +312,7 @@ export default function About() {
                   <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100">
                     <h3 className="text-lg font-cinzel font-semibold text-gray-900 mb-4">Educational Philosophy</h3>
                     <p className="font-space-grotesk text-gray-700 leading-relaxed">
-                      Dr. Rumi believes in <strong>experiential learning</strong> that bridges theoretical knowledge with practical application.
+                      Rumi believes in <strong>experiential learning</strong> that bridges theoretical knowledge with practical application.
                       His pedagogical approach emphasizes critical thinking, collaborative problem-solving, and real-world policy analysis.
                       Students are encouraged to engage with contemporary governance challenges through case studies, simulations, and
                       direct interaction with policy practitioners.
